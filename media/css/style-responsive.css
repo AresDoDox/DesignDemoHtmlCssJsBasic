@@ -1,0 +1,272 @@
+@media (max-width: 767px){
+	/* Display: none; =======================================> */
+	.pagination-top,
+	.menu-bar-top,
+	.btn-destop{
+		display: none;
+	}
+	.container{
+		padding: 0px;
+	}
+	/*Style Header=================================================>*/
+	.dang-tin>.btn-mobile>a {
+		font-size: 18px;
+		margin-right: 10px;
+		text-decoration: none;
+		color: #C41415;
+	}
+	header>div>div{
+		padding: 0px !important;
+	}
+	/*Menu toggle*/
+	#menu-toggle{
+		padding-top: 95px;
+		overflow-y: auto;
+	}
+	.icon-menu {
+		height: 36px;
+		width: 36px;
+		padding: 6px 8px 8px 8px;
+		margin: 6px 0px 6px 10px;
+		border-radius: 5px;
+	}
+	ul.sub-menu {
+		display: block !important;
+		position: static !important;
+	}
+	ul.sub-menu>li>a,
+	ul.sub-menu>li>a:link {
+		padding-left: 35px !important;
+	}
+	.icon-menu-right{
+		display: none;
+	}
+	/*logo*/
+	#logo-clipchothue {
+		max-height: 50px;
+		padding: 10px;
+	}
+	#logo-clipchothue>a>img {
+		max-height: 30px;
+	}
+	/*form search*/
+	.box-form-search {
+		position: fixed;
+		width: 100%;
+		top: 50px;
+		margin: 0px;
+		border-radius: 0px;
+		padding: 0px 5px 5px 5px;
+		border: none;
+		background: #fff;
+	}
+	.searchform {
+		border: 2px solid #ccc;
+		border-radius: 10px;
+	}
+	.searchform>span.search-select-icon {
+		left: 18%;
+	}
+	.searchform>select {
+		width: 23%;
+	}
+	.searchform>input[type=text] {
+		width: 67%;
+		height: 32px;
+	}
+	.searchform>button {
+		width: 10%;
+		height: 32px;
+		padding: 0px;
+	}
+	/*Nút Đăng tin*/
+	.dang-tin {
+		margin-top: 13px;
+		margin-right: 10px;
+	}
+	.dang-tin>a {
+		margin: 0;
+		font-size: 12px;
+		padding: 4px 6px;
+	}
+
+	/*Style Footer ===========================================================>*/
+	footer .img-bct>img{
+		width: 100% !important;
+	}
+	.footer-cate,
+	.bottom-footer,
+	.top-footer{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	/*Style Content Index=====================================================>*/
+	.box-content{
+		margin-top: 91px;
+	}
+	.big-box-posts-cate{
+		padding: 0;
+	}
+	/*Style Content Small Categories=====================================================>*/
+	.box-post-small-cate>.entry-thumbnail{
+		float: none;
+		margin-right: 0px;
+	}
+	/*Sidebar============================>*/
+}
+
+/*----------------------------TABLET-------------------------------------------*/
+@media (max-width: 991px) and (min-width: 767px){
+	.menu-bar-top,
+	.btn-mobile{
+		display: none;
+	}
+	.container{
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+	}
+	/*Style Header=================================================>*/
+	header>div>div{
+		padding: 0px !important;
+	}
+	/*Menu toggle*/
+	#menu-toggle{
+		padding-top: 105px;
+		overflow-y: auto;
+	}
+	ul.sub-menu {
+		display: block !important;
+		position: static !important;
+	}
+	ul.sub-menu>li>a,
+	ul.sub-menu>li>a:link {
+		padding-left: 35px !important;
+	}
+	.icon-menu-right{
+		display: none;
+	}
+	/*form search*/
+	.box-form-search {
+		position: fixed;
+		width: 100%;
+		top: 60px;
+		left: 0;
+		margin: 0px;
+		border-radius: 0px;
+		padding: 0px 5px 5px 5px;
+		border: none;
+		background: #fff;
+	}
+	.searchform {
+		border: 2px solid #ccc;
+		border-radius: 10px;
+	}
+	.searchform>span.search-select-icon {
+		left: 12.5%;
+	}
+	.searchform>select {
+		width: 15%;
+	}
+	.searchform>input[type=text] {
+		width: 80%;
+		height: 32px;
+	}
+	.searchform>button {
+		width: 5%;
+		height: 32px;
+		padding: 0px;
+	}
+	/*Nút Đăng tin*/
+	.dang-tin {
+		margin-top: 18px;
+		margin-right: 15px;
+	}
+
+	/*Style Footer ===========================================================>*/
+
+	/*Style Content Index=====================================================>*/
+	.box-content{
+		margin-top: 101px;
+	}
+	.big-box-posts-cate{
+		padding: 0px;
+	}
+	/*Sidebar============================>*/
+	.related-post{
+		padding-right: 15px;
+	}
+}
+/*----------------------------DESTOP - LAPTOP-------------------------------------------*/
+@media (min-width: 991px){
+	.container>div{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.btn-mobile{
+		display: none;
+	}
+	.menu-bar-top{
+		position: relative;
+		padding: 5px 0px;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		background-image: url(../img/bg-red-60.png);
+		background-repeat: repeat-x;
+		height: 60px;
+	}
+	.menu-bar-top ul,
+	.menu-bar-top li{
+		list-style: none;
+	}
+	.menu-bar-top li{
+		float: left;
+		position: relative;
+		width: 11%;
+		height: 50px;
+		background: #fff;
+		margin-left: 0.75%;
+		margin-right: 0.75%;
+		border-radius: 50px;
+	}
+	.img-icon-cate{
+		position: absolute;
+		top: 3px;
+		left: 3px;
+	}
+	.img-icon-cate>a>img{
+		height: 44px;
+		width: auto;
+	}
+	.title-big-cate>a{
+		position: absolute;
+		top: 7px;
+		left: 57px;
+		font-size: 14px;
+		font-weight: bold;
+		width: 70px;
+		height: 35px;
+		line-height: 1.2;
+		overflow: hidden;
+		color: black;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	header{
+		position: relative;
+	}
+	/*Sidebar============================>*/
+	.big-box-sidebar{
+		padding-right: 0px;
+	}
+	/*Posts cate*/
+	.info-to-rent{
+		top: 20px;
+	}
+	.big-box-posts-cate{
+		padding-left: 0;
+	}
+}
