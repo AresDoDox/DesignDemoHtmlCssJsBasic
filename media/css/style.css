@@ -18,15 +18,18 @@ a:hover,a:link,a:focus,a:visited{
 body{
 	background: #f8f8f8;
 }
-input[type=text], input[type=password], textarea {
+input,input[type=text], input[type=password], textarea {
 	border: 1px solid #ccc !important;
+	outline: none;
 }
 .big-box{
 	box-shadow: 1px 1px 4px #888888;
 	-webkit-transition: box-shadow 0.4s; /* For Safari 3.1 to 6.0 */
 	transition: box-shadow 0.4s;
 }
-
+.big-box-posts-new{
+	overflow: hidden;
+}
 /*Back to Top ==========>*/
 #myBtn {
   display: none; /* Mặc định button sẽ được ẩn*/
@@ -257,34 +260,20 @@ footer .footer-cate li {
 	padding: 5px 15px;
 }
 /*Small - categories*/
-.small-categories {
-	height: 80px;
+.small-categories{
 	background: #fff;
-	border: 1px solid #f2f2f2;
-	padding: 0;
-}
-h3.small-title-cate {
-	height: 80px;
+	padding: 10px;
 	font-size: 16px;
-	font-weight: normal;
-	color: #707070;
-	padding-top: 15px;
-	padding-left: 10px;
 }
-img.img-cate {
-	height: 50px;
-	width: auto;
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
+.small-categories>a{
+	color: #7d0000;
+	padding-right: 5px;
+	padding-left: 5px
 }
-.small-categories:hover img.img-cate{
-	height: 70px;
-	bottom: 5px;
-	right: 5px;
-	-webkit-transition: height 1s, bottom 1s, right 1s; /* Safari */
-	transition: height 1s, bottom 1s, right 1s;
+.small-categories>a:hover{
+	text-decoration: underline;
 }
+
 /* Posts new by cate */
 .posts-by-category{
 
@@ -300,15 +289,16 @@ img.img-cate {
 	padding: 0px;
 	position: relative;
 }
-h3.title-cate{
+.title-cate{
 	font-size: 20px;
 	position: relative;
 	padding-bottom: 9px;
 	margin-top: 10px;
 	border-bottom: 3px solid #ccc;
 	font-weight: bold;
+	margin-bottom: 0px;
 }
-h3.title-cate>span{
+.title-cate>span{
 	padding-bottom: 8px;
 	border-bottom: 3px solid;  
 }
@@ -481,6 +471,9 @@ sup.temp-new {
 	margin-right: 20px;
 }
 /*Sidebar============================>*/
+.big-box-sidebar{
+	float: right;
+}
 .sidebar{
 	padding-bottom: 10px;
 }
@@ -499,7 +492,7 @@ sup.temp-new {
 	margin-right: 5px;
 }
 .title-related-post>a {
-	font-size: 16px;
+	font-size: 14px;
 	color: black;
 	font-weight: bold;
 }
@@ -529,6 +522,123 @@ sup.temp-new {
 }
 .categories-name a:hover{
 	text-decoration: underline;
+}
+
+/*Single Post =========================================================>*/
+.video-single-post{
+	padding: 0px;
+}
+/*Table single post*/
+.post-time{
+	color: #828282;
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+}
+table.tb-single-post{
+	border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 20px;
+}
+table.tb-single-post td{
+	padding: 5px 5px 5px 15px;
+    font-size: 16px;
+    border: 1px solid #c3c3c3;
+}
+table.tb-single-post td:first-child{
+	width: 120px;
+    background: #f2f2f2;
+}
+.title-des{
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+/*Comment*/
+.box-comments,
+.box-reply-comments,
+.box-reply-comments-info{
+	padding: 0px;
+}
+.box-reply-comments{
+	margin-bottom: 20px;
+}
+.box-reply-comments-info{
+	min-height: 130px;
+}
+.content-comment{
+	margin-top: 10px;
+}
+.content-comment>img{
+	float: left;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+.content-comment>p{
+	margin-left: 40px;
+	padding: 5px 8px;
+	background: #f2f2f2;
+	border-radius: 10px;
+}
+.content-comment>p>strong{
+	color: #7d0000;
+}
+.content-comment{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.box-input-cmt{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	padding-right: 40px;
+	z-index: 5;
+}
+.box-input-cmt>input.reply-cmt{
+	width: 100%;
+	padding: 5px 8px;
+	background: #f2f2f2;
+	border-radius: 10px;
+}
+.box-input-cmt>p{
+	padding: 8px 0px;
+	color: #f20000;
+}
+.box-input-cmt>input.reply-cmt-info{
+	width: 33%;
+	padding: 5px 8px;
+	background: #f2f2f2;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+button.btn-submit-comment{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	background: transparent;
+	border: none;
+	padding: 6px 8px;
+	color: #f20000;
+	font-weight: bold;
+}
+button.btn-submit-comment:hover{
+	text-decoration: underline;
+}
+button.btn-submit-cmt-info{
+	position: absolute;
+	top: 75px;
+	right: 0;
+	padding: 5px 10px;
+	background: #7d0000;
+	color: #fff;
+	border-radius: 10px;
+}
+button.btn-submit-cmt-info:hover{
+	background: #555;
 }
 /*-----------------------------------Color theo danh mục-----------------------------------------*/
 .bg-bds{
