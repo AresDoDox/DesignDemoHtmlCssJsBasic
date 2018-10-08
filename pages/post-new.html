@@ -217,6 +217,87 @@
 							<span> | </span>
 							<a href="choose-type-post.html">Thay đổi chuyên mục</a>
 						</div>
+						<div class="col-xs-12 col-sm-12 col-md-8 form-post-new">
+							<form action="">
+								<div class="form-group">
+									<label for="">Tỉnh/Thành</label>
+									<select name="" id="" class="form-control">
+										<option value="">Chọn Tỉnh/Thành</option>
+										<option value="">Tp.Hồ Chí Minh</option>
+										<option value="">Hà Nội</option>
+									</select>
+								</div><!--Tỉnh thành-->
+								<div class="form-group">
+									<label for="">Quận/Huyện</label>
+									<select name="" id="" class="form-control">
+										<option value="">Chọn Quận/Huyện</option>
+										<option value="">Quận 1</option>
+										<option value="">Quận 2</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="">Phường/Xã</label>
+									<select name="" id="" class="form-control">
+										<option value="">Chọn Phường/Xã</option>
+										<option value="">Quận 1</option>
+										<option value="">Quận 2</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="">Địa chỉ</label>
+									<input type="text" class="form-control" placeholder="Nhập địa chỉ">
+								</div>
+								<div class="form-group">
+									<label for="">Giá</label>
+									<input type="text" class="form-control" placeholder="Nhập giá">
+								</div>
+								<div class="form-group">
+									<label for="">Tiêu đề</label>
+									<input type="text" class="form-control" placeholder="Tiêu đề không quá 70 ký tự, dùng Tiếng Việt có dấu.">
+								</div>
+								<div class="form-group">
+									<label for="">Nội dung:</label>
+									<textarea name="" id="" class="form-control" rows="3" placeholder="Bổ sung đầy đủ thông tin sản phẩm (địa chỉ, diện tích, giá cả,...). Vui lòng nhập Tiếng Việt có dấu. Nội dung không quá 2000 ký tự"></textarea>
+								</div>
+								<div class="form-group">
+									<label for="">Đăng clip video:</label>
+									<input type="file" class="form-control" >
+								</div>
+							</form>
+						</div><!--End form post new-->
+						<div class="col-xs-12 col-sm-12 col-md-4 example-post">
+							<div class="title-example-post">Tin đăng mẫu</div>
+							<ul class="examples">
+								<!-- ko foreach:{data: PostExamplesItems, as: 'item'} -->
+								<li>
+									<div>
+										<span class="ex-title">
+											Tiêu đề:
+											<span data-bind="text: item.Title" class="title-content">
+												Bán đất mặt tiền dự án Thủ Đức House, đường Trần Não, Quận 2
+											</span>
+										</span>
+									</div>
+									<div data-bind="html: item.Content" class="ex-content">
+										Cần bán đất dự án Thủ Đức House, Quận 2, mặt tiền đường 30m, dự án nằm ngay góc ngã 4 Trần Não và Lương Định Của, khu đô thị mới Thủ Thiêm.<br>- Lô L - M: diện tích 7,5x20m đường rộng 30m giá 83tr/m2.<br>- Lô H: diện tích 7,5x20m đối diện công viên giá 75tr/m2.<br>- Lô M: diện tích7,5x20m đường 12m giá 75tr/m2.
+									</div>
+								</li>
+								
+								<li>
+									<div>
+										<span class="ex-title">
+											Tiêu đề: 
+											<span data-bind="text: item.Title" class="title-content">
+												Bán đất nền huyện Bình Chánh sổ hồng riêng, giá chỉ 189tr
+											</span>
+										</span>
+									</div>
+									<div data-bind="html: item.Content" class="ex-content">
+										Cần bán đất nền dự án tại huyện Bình Chánh sổ hồng riêng, bao GPXD, diện tích đa dạng, tiện kinh doanh, buôn bán, xây phòng trọ cho thuê.<br>- Diện tích 5x15, 5x16, 5x19, 5x20, 5x21, 5x26, 6x19, 6x20m.<br>- Đường nhựa 16-42m, nước máy, điện âm, cáp, internet.<br>- Ngay khu dân cư, đối diện BV Chợ Rẫy II, BV Đa Khoa Tân Tạo<br>- Gần chợ, siêu thị Vĩnh Lộc, trường Cấp I, II, III.<br>- Ngay giao lộ Trần Văn Giàu, gần Cao tốc Trung Lương lộ giới 60m.
+									</div>
+								</li>
+							</ul>
+						</div><!--End sample post-->
 					</div> <!--End Box-post-new-->
 				</div> <!--End Content category-->
 				<div class="col-xs-12 col-sm-12 col-md-3 big-box-sidebar">

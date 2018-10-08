@@ -327,6 +327,10 @@
 	.form-post-p1{
 		display: block !important;
 	}
+	/*DDAng tin*/
+	.form-post-new{
+		padding-right: 20px;
+	}
 }
 @media (min-width: 991px) and (max-width: 1200px){
 	.searchform>input[type=text]{
