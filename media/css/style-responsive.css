@@ -2,7 +2,8 @@
 	/* Display: none; =======================================> */
 	.pagination-top,
 	.menu-bar-top,
-	.btn-destop{
+	.btn-destop,
+	.control-label{
 		display: none;
 	}
 	.container{
@@ -114,7 +115,7 @@
 	}
 	/*Sidebar============================>*/
 	/*Single-Post ================================================>*/
-	.big-box-posts-new{
+	.big-box-posts-new-single{
 		margin-top: 0px;
 		border-radius: 0 0 10px 10px;
 	}
@@ -132,6 +133,24 @@
 	button.btn-submit-cmt-info{
 		top: 175px;
 		left: 40px;
+	}
+	/*Đang nhập - Đăng ký ==========================================>*/
+	.signin-form{
+		padding: 10px 0px;
+	}
+	/*Đăng tin miễn phí=============================================>*/
+	/*=====Chọn kiểu đăng tin===============>*/
+	.form-post-p1{
+		margin-right: 0px;
+	}
+	.edit-choose-cate {
+		display: inline;
+	}
+	.btn-edit {
+		color: #f20000 !important;
+		background: transparent;
+		border: none;
+		outline: none;
 	}
 }
 
@@ -225,6 +244,11 @@
 	.box-input-cmt>input.reply-cmt-info {
 		width: 32.9%;
 	}
+	/*Đăng tin miễn phí=============================================>*/
+	/*=====Chọn kiểu đăng tin===============>*/
+	.form-post-p1{
+		display: block !important;
+	}
 }
 /*----------------------------DESTOP - LAPTOP-------------------------------------------*/
 @media (min-width: 991px){
@@ -297,6 +321,11 @@
 	}
 	.big-box-posts-cate{
 		padding-left: 0;
+	}
+	/*Đăng tin miễn phí=============================================>*/
+	/*=====Chọn kiểu đăng tin===============>*/
+	.form-post-p1{
+		display: block !important;
 	}
 }
 @media (min-width: 991px) and (max-width: 1200px){

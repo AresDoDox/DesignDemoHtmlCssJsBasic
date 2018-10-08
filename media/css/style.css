@@ -32,23 +32,23 @@ input,input[type=text], input[type=password], textarea {
 }
 /*Back to Top ==========>*/
 #myBtn {
-  display: none; /* Mặc định button sẽ được ẩn*/
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 20px;
-  right: 30px; 
-  z-index: 99; /* button được ưu tiên hiển thị đè lên các phần khác*/
-  border: none;
-  outline: none;
-  background-color: #7d0000;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 50%;
+	display: none; /* Mặc định button sẽ được ẩn*/
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 20px;
+	right: 30px; 
+	z-index: 99; /* button được ưu tiên hiển thị đè lên các phần khác*/
+	border: none;
+	outline: none;
+	background-color: #7d0000;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 50%;
 }
 #myBtn:hover {
-  background-color: #555;
+	background-color: #555;
 }
 
 /*Style Header ===================================================>*/
@@ -75,24 +75,6 @@ header{
 .icon-menu>span {
 	font-size: 24px;
 	color: black;
-}
-/* Block menu flixed */
-#menu-toggle {
-	position: fixed;
-	display: none;
-	height: 100%;
-	min-height: 100%;
-	width: 250px;
-	padding-top: 125px;
-	top: 0;
-	left: 0;
-	border-right: 1px solid #c3c3c3;
-	z-index: 8888;
-	background: #f2f2f2;
-	-webkit-animation-name: slideIn;
-	-webkit-animation-duration: 0.6s;
-	animation-name: slideIn;
-	animation-duration: 0.6s;
 }
 /* Logo */
 #logo-clipchothue {
@@ -227,7 +209,7 @@ footer .footer-cate .line-title {
 	overflow: hidden;
 }
 footer .footer-cate li {
-    padding-left: 15px;
+	padding-left: 15px;
 }
 
 /*Style Content Index=====================================================>*/
@@ -430,13 +412,16 @@ sup.temp-new {
 	padding: 0px 8px 8px 8px;
 }
 /*Page pagination*/
-.pagination-top{
+.form-filter{
 	position: absolute;
 	right: 0;
-	bottom: 1px;
+	bottom: 8px;
 }
-.pagination-top>ul{
-	margin: 0px;
+.form-filter select{
+	display: inline;
+	width: auto;
+	padding: 6px 0px;
+	height: 30px;
 }
 .pagination-bottom{
 	text-align: center;
@@ -537,18 +522,18 @@ sup.temp-new {
 }
 table.tb-single-post{
 	border-collapse: collapse;
-    width: 100%;
-    border: 1px solid #c3c3c3;
-    margin-bottom: 20px;
+	width: 100%;
+	border: 1px solid #c3c3c3;
+	margin-bottom: 20px;
 }
 table.tb-single-post td{
 	padding: 5px 5px 5px 15px;
-    font-size: 16px;
-    border: 1px solid #c3c3c3;
+	font-size: 16px;
+	border: 1px solid #c3c3c3;
 }
 table.tb-single-post td:first-child{
 	width: 120px;
-    background: #f2f2f2;
+	background: #f2f2f2;
 }
 .title-des{
 	font-size: 18px;
@@ -639,6 +624,150 @@ button.btn-submit-cmt-info{
 }
 button.btn-submit-cmt-info:hover{
 	background: #555;
+}
+
+/*Đang nhập - Đăng ký ==========================================>*/
+.signin-form{
+	padding: 20px 25%;
+}
+.signin-form p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.signin-form span{
+	margin-left: 10px;
+}
+.signin-form a{
+	color: #f20000;
+}
+.signin-form a:hover{
+	text-decoration: underline;
+}
+.signin-form button{
+	background: #7d0000;
+	border-color: #7d0000;
+}
+.signin-form button:hover{
+	background: #f20000;
+}
+
+/*Đăng tin miễn phí=============================================>*/
+/*=====Chọn kiểu đăng tin===============>*/
+.choose-type-post>p:first-child{
+	color: #f20000;
+	margin-bottom: 15px;
+}
+.form-post-p1{
+	padding: 0px;
+	margin-right: 30px;
+}
+.form-post-p2{
+	display: none;
+	padding: 0;
+}
+.edit-choose-cate {
+    display: none;
+}
+.title-part-post {
+    padding: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.icon-circle-part {
+    color: #fff;
+    background: #7d0000;
+    border-radius: 50%;
+    padding: 6px 10px 6px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.post-cate-list {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0px;
+}
+.post-cate-list hr.border-top-post-cate {
+    border-top: 1px solid #bbb;
+    margin: 0px;
+}
+.post-cate-list li {
+    position: relative;
+    border-bottom: 1px solid #bbb;
+    min-height: 41px;
+    z-index: 100;
+}
+.post-cate-list li button {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 40px;
+    outline: none;
+}
+.post-cate-list li button.active,
+.post-cate-list li button:hover{
+	background: #7d0000;
+}
+.post-cate-list li button.active i,
+.post-cate-list li button.active p,
+.post-cate-list li button.active span,
+.post-cate-list li button:hover p,
+.post-cate-list li button:hover i,
+.post-cate-list li button:hover span{
+	color: #fff;
+}
+
+.post-cate-list i {
+    float: left;
+    font-size: 22px;
+    color: #7d0000;
+    margin-left: 5px;
+}
+.post-cate-list .name-cate {
+    float: left;
+    padding-left: 8px;
+    height: 22px;
+    color: black;
+    margin-top: 3px;
+    overflow: hidden;
+}
+.icon-post-menu {
+    display: block !important;
+    margin-right: 10px;
+    color: black;
+}
+/*Đăng tin mới =================>*/
+.title-post-new{
+	padding: 0px;
+}
+.title-post-new>h1,
+.title-post-new>span{
+	font-size: 20px;
+	display: inline;
+}
+.title-post-new>a{
+	color: #7d0000;
+	font-size: 16px;
+}
+.title-post-new>a:hover{
+	text-decoration: underline;
+}
+/*Error 404 ============================================================>*/
+.er-404{
+	text-align: center;
+}
+.er-404>h1{
+	font-size: 150px;
+	color: #7d0000;
+}
+.er-404>p{
+	font-size: 20px;
+}
+.er-404>p:last-child {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #555;
 }
 /*-----------------------------------Color theo danh mục-----------------------------------------*/
 .bg-bds{
