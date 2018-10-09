@@ -136,9 +136,9 @@
 					<form method="get" class="searchform" action="">
 						<span class="glyphicon glyphicon-chevron-down search-select-icon"></span>
 						<select name="">
-							<option value="">Toàn bộ</option>
-							<option value="can-ho">Căn hộ</option>
-							<option value="nha">Nhà - Biệt thự</option>				
+							<option value="">Toàn quốc</option>
+							<option value="can-ho">Tp. Hồ Chí Minh</option>
+							<option value="nha">Hà Nội</option>				
 						</select>
 						<input type="text" class="field s" name="s" placeholder="Nhập từ khóa tìm kiếm">
 						<button type="submit" name="submit">
@@ -219,21 +219,80 @@
 							<span class="cl-bds b-bds">Bất động sản</span>
 							<sup class="temp-new">Tất cả</sup>
 						</h3>
-						<div class="form-filter">
-							<form action="">
-								<label for="" class="control-label">Tỉnh/Thành Phố: </label>
-								<select class="form-control">
-									<option>Chọn Tỉnh/Tp</option>
-									<option>Tp. Hồ Chí Minh</option>
-									<option>Hà Nội</option>
-									<option>Đà Nẵng</option>
-									<option>Nha Trang</option>
-									<option>Đà Lạt</option>
-								</select>
-							</form>
-						</div> <!--End filter-->
+						<div class="button-filter">
+							<button class="btn btn-danger btn-filter" onclick="openFormFilter()">
+								<i class="fa fa-filter"></i>
+								Bộ lọc
+							</button>
+						</div> <!--End button filter-->
 					</div><!--End Title-->
 					<div class="col-xs-12 col-md-12 box-posts">
+						<div class="col-xs-12 col-sm-12 col-md-12 form-filter" id="form-filter">
+							<p class="title-filter">Bộ lọc</p>
+							<form action="">
+								<div class="form-group-filter">
+									<label for="" class="control-label">Tỉnh/Thành Phố: </label>
+									<select class="form-control">
+										<option>Chọn Tỉnh/Tp</option>
+										<option>Tp. Hồ Chí Minh</option>
+										<option>Hà Nội</option>
+										<option>Đà Nẵng</option>
+										<option>Nha Trang</option>
+										<option>Đà Lạt</option>
+									</select>
+								</div>
+								<div class="form-group-filter">
+									<label for="" class="control-label">Quận/Huyện: </label>
+									<select class="form-control">
+										<option>Quận/Huyện</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+									</select>
+								</div>
+								<div class="form-group-filter">
+									<label for="" class="control-label">Khu vực: </label>
+									<select class="form-control">
+										<option>Khu vực</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+									</select>
+								</div>
+								<div class="form-group-filter">
+									<label for="" class="control-label">Giá: </label>
+									<select class="form-control">
+										<option>Thấp nhất</option>
+										<option>10 triệu</option>
+										<option>20 triệu</option>
+									</select>
+									<span> - </span>
+									<select class="form-control">
+										<option>Cao nhất</option>
+										<option>100 triệu</option>
+										<option>200 triệu</option>
+									</select>
+								</div>
+								<div class="form-group-filter">
+									<label for="" class="control-label">Diện tích: </label>
+									<select class="form-control">
+										<option>Thấp nhất</option>
+										<option>50m2</option>
+										<option>80m2</option>
+									</select>
+									<span> - </span>
+									<select class="form-control">
+										<option>Cao nhất</option>
+										<option>100m2</option>
+										<option>200m2</option>
+									</select>
+								</div>
+							</form>
+						</div><!--End form filter-->
 						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
 							<div class="entry-thumbnail">
 								<video preload="none" poster="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" width="100%" controls="">
@@ -821,25 +880,28 @@
 	</script>
 	<!-- Back To Top -->
 	<script>
-    //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
-    window.onscroll = function() {scrollFunction()};
-    // khai báo hàm scrollFunction
-    function scrollFunction() {
-        // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            //nếu lớn hơn 20px thì hiện button
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-             //nếu nhỏ hơn 20px thì ẩn button
-             document.getElementById("myBtn").style.display = "none";
-         }
-     }
-    //gán sự kiện click cho button
-    document.getElementById('myBtn').addEventListener("click", function(){
-        //Nếu button được click thì nhảy về đầu trang
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    });
-</script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+		document.getElementById('myBtn').addEventListener("click", function(){
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		});
+	</script>
+	<script>
+		var btnFilter = document.getElementById('form-filter');
+		function openFormFilter(){		
+			if (btnFilter.style.display == 'block') {
+				btnFilter.style.display = 'none';
+			}else{
+				btnFilter.style.display = 'block';
+			}
+		};
+	</script>
 </body>
 </html>

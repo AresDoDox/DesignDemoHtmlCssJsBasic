@@ -2,8 +2,7 @@
 	/* Display: none; =======================================> */
 	.pagination-top,
 	.menu-bar-top,
-	.btn-destop,
-	.control-label{
+	.btn-destop{
 		display: none;
 	}
 	.container{

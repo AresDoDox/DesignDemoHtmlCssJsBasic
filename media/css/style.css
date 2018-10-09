@@ -407,21 +407,50 @@ sup.temp-new {
 	color: black;
 }
 /*Style Content Big Categories=====================================================>*/
+.string-search{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
 .box-small-categories{
 	border-radius: 0 0 10px 10px;
 	padding: 0px 8px 8px 8px;
 }
 /*Page pagination*/
 .form-filter{
+	display: none;
+	padding: 15px 15px 0px 15px;
+	border: 1px solid #ccc;
+	margin: 10px 0;
+	position: relative;
+}
+.title-filter{
+	position: absolute;
+	top: -15px;
+	left: 15px;
+	background: #fff;
+	padding: 4px 8px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.form-group-filter{
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.form-filter form select{
+	display: inline;
+	width: auto;
+}
+.button-filter{
 	position: absolute;
 	right: 0;
 	bottom: 8px;
 }
-.form-filter select{
-	display: inline;
-	width: auto;
-	padding: 6px 0px;
-	height: 30px;
+.btn-filter{
+	background-color: #f20000;
+	padding: 3px 8px;
+	outline: none;
 }
 .pagination-bottom{
 	text-align: center;
@@ -743,6 +772,35 @@ button.btn-submit-cmt-info:hover{
 .example-post{
 	padding: 0px;
 	margin-bottom: 10px;
+}
+.form-group{
+	margin-bottom: 10px;
+}
+.form-post-new input[type=file]{
+	display: none;
+}
+.form-post-new .btn-choose-file{
+	background: #f20000;
+	display: block;
+	color: #fff;
+}
+.form-post-new .btn-choose-file>svg{
+	width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+.user-info{
+	font-weight: bold;
+	padding: 5px 0px;
+	font-size: 16px;
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 10px;
+}
+.btn-post-submit{
+	background: #f20000;
 }
 .title-post-new>h1,
 .title-post-new>span{
