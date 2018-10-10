@@ -542,6 +542,13 @@ sup.temp-new {
 .video-single-post{
 	padding: 0px;
 }
+.temp-check-hired{
+	color: #fff;
+	background: #00B233;
+	padding: 2px 5px 3px 5px;
+	font-size: 12px;
+	border-radius: 4px;
+}
 /*Table single post*/
 .post-time{
 	color: #828282;
@@ -695,44 +702,44 @@ button.btn-submit-cmt-info:hover{
 	padding: 0;
 }
 .edit-choose-cate {
-    display: none;
+	display: none;
 }
 .title-part-post {
-    padding: 0px;
-    font-size: 16px;
-    font-weight: bold;
+	padding: 0px;
+	font-size: 16px;
+	font-weight: bold;
 }
 .icon-circle-part {
-    color: #fff;
-    background: #7d0000;
-    border-radius: 50%;
-    padding: 6px 10px 6px 10px;
-    font-size: 14px;
-    font-weight: bold;
+	color: #fff;
+	background: #7d0000;
+	border-radius: 50%;
+	padding: 6px 10px 6px 10px;
+	font-size: 14px;
+	font-weight: bold;
 }
 .post-cate-list {
-    list-style: none;
-    margin-top: 15px;
-    padding: 0px;
+	list-style: none;
+	margin-top: 15px;
+	padding: 0px;
 }
 .post-cate-list hr.border-top-post-cate {
-    border-top: 1px solid #bbb;
-    margin: 0px;
+	border-top: 1px solid #bbb;
+	margin: 0px;
 }
 .post-cate-list li {
-    position: relative;
-    border-bottom: 1px solid #bbb;
-    min-height: 41px;
-    z-index: 100;
+	position: relative;
+	border-bottom: 1px solid #bbb;
+	min-height: 41px;
+	z-index: 100;
 }
 .post-cate-list li button {
-    width: 100%;
-    background: #fff;
-    border: none;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    height: 40px;
-    outline: none;
+	width: 100%;
+	background: #fff;
+	border: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	height: 40px;
+	outline: none;
 }
 .post-cate-list li button.active,
 .post-cate-list li button:hover{
@@ -748,23 +755,23 @@ button.btn-submit-cmt-info:hover{
 }
 
 .post-cate-list i {
-    float: left;
-    font-size: 22px;
-    color: #7d0000;
-    margin-left: 5px;
+	float: left;
+	font-size: 22px;
+	color: #7d0000;
+	margin-left: 5px;
 }
 .post-cate-list .name-cate {
-    float: left;
-    padding-left: 8px;
-    height: 22px;
-    color: black;
-    margin-top: 3px;
-    overflow: hidden;
+	float: left;
+	padding-left: 8px;
+	height: 22px;
+	color: black;
+	margin-top: 3px;
+	overflow: hidden;
 }
 .icon-post-menu {
-    display: block !important;
-    margin-right: 10px;
-    color: black;
+	display: block !important;
+	margin-right: 10px;
+	color: black;
 }
 /*Đăng tin mới =================>*/
 .title-post-new,
@@ -786,11 +793,11 @@ button.btn-submit-cmt-info:hover{
 }
 .form-post-new .btn-choose-file>svg{
 	width: 1em;
-    height: 1em;
-    vertical-align: middle;
-    fill: currentColor;
-    margin-top: -0.25em;
-    margin-right: 0.25em;
+	height: 1em;
+	vertical-align: middle;
+	fill: currentColor;
+	margin-top: -0.25em;
+	margin-right: 0.25em;
 }
 .user-info{
 	font-weight: bold;
@@ -821,33 +828,33 @@ button.btn-submit-cmt-info:hover{
 
 .title-example-post{
 	background: #f9f9f9;
-    padding: 7px 10px 7px 10px;
-    font-weight: bold;
-    border-bottom: 1px solid #cecece;
+	padding: 7px 10px 7px 10px;
+	font-weight: bold;
+	border-bottom: 1px solid #cecece;
 }
 .examples {
-    list-style: none;
-    padding: 10px 10px 0 10px;
+	list-style: none;
+	padding: 10px 10px 0 10px;
 }
 .examples>li {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #ccc;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ccc;
 }
 .examples>li:last-child{
 	border: none;
 	padding-bottom: 0px;
 }
 .examples>li .ex-title {
-    color: #b0b0b0;
+	color: #b0b0b0;
 }
 .examples>li .title-content {
-    color: #7d0000;
-    font-weight: bold;
+	color: #7d0000;
+	font-weight: bold;
 }
 .examples>li .ex-content {
-    margin-top: 5px;
-    color: #585858;
+	margin-top: 5px;
+	color: #585858;
 }
 /*Error 404 ============================================================>*/
 .er-404{
