@@ -314,7 +314,6 @@ footer .footer-cate li {
 .small-categories>a:hover{
 	text-decoration: underline;
 }
-
 /* Posts new by cate */
 .posts-by-category{
 
@@ -333,14 +332,14 @@ footer .footer-cate li {
 .title-cate{
 	font-size: 20px;
 	position: relative;
-	padding-bottom: 9px;
+	padding-bottom: 5px;
 	margin-top: 10px;
 	border-bottom: 3px solid #ccc;
 	font-weight: bold;
 	margin-bottom: 0px;
 }
 .title-cate>span{
-	padding-bottom: 8px;
+	padding-bottom: 4px;
 	border-bottom: 3px solid;  
 }
 sup.temp-new {
@@ -414,7 +413,7 @@ sup.temp-new {
 	text-align: center;
 }
 .entry-content>p:last-child{
-	font-size: 14px;
+	font-size: 15px;
 	color: #7d0000;
 	font-weight: bold;
 }
@@ -482,7 +481,7 @@ sup.temp-new {
 	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
 	transition: all 1s;
 }
-.box-post-small-cate>.entry-thumbnail{
+.entry-thumbnail{
 	padding: 0;
 }
 .box-post-small-cate>.entry-description{
@@ -502,6 +501,10 @@ sup.temp-new {
 .box-post-small-cate .entry-content span{
 	display: inline-block;
 	margin-right: 20px;
+}
+.box-post-small-cate .entry-content>p{
+	display: block;
+	font-size: 14px;
 }
 /*Sidebar============================>*/
 .big-box-sidebar{
