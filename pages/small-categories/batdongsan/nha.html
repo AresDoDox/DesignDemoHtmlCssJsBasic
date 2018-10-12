@@ -132,30 +132,16 @@
 						<img src="../../../media/img/logo-clipchothue.png">
 					</a>
 				</div><!--Logo-->
-				<div class="box-form-search">
-					<form method="get" class="searchform" action="">
-						<span class="glyphicon glyphicon-chevron-down search-select-icon"></span>
-						<select name="">
-							<option value="">Toàn quốc</option>
-							<option value="can-ho">Tp. Hồ Chí Minh</option>
-							<option value="nha">Hà Nội</option>				
-						</select>
-						<input type="text" class="field s" name="s" placeholder="Nhập từ khóa tìm kiếm">
-						<button type="submit" name="submit">
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</form>
-				</div><!--Form Search-->
 				<div class="dang-tin">
 					<div class="btn-destop">
-						<a href="" style="display: none">
-							<i class="fa fa-sign-out-alt"></i> Đăng nhập
+						<a href="" class="btn-dangtin">
+							<i class="fa fa-pencil-alt"></i> Đăng tin miễn phí
 						</a>
 						<a href="">
 							<i class="fa fa-user"></i> Đăng nhập
-						</a>
-						<a href="" class="btn-dangtin">
-							<i class="fa fa-pencil-alt"></i> Đăng tin miễn phí
+						</a>	
+						<a href="" style="display: none">
+							<i class="fa fa-sign-out-alt"></i> Đăng xuất
 						</a>
 					</div>
 					<div class="btn-mobile">
@@ -165,14 +151,58 @@
 						<a href="">
 							<i class="fa fa-user"></i>
 						</a>
-						<a href="">
+						<a href="" style="display: none">
 							<i class="fa fa-sign-out-alt"></i>
 						</a>
 					</div>
+					<button class="btn-search" id="btn-search">
+						<i class="fa fa-search"></i>
+						<span></span>
+					</button>
 				</div><!--Đăng tin miễn phí-->
 			</div>
 		</div>		
 	</header><!--header-->
+	
+	<div class="box-form-search" id="box-form-search">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<form action="">
+					<div class="col-xs-12 col-sm-6 col-md-6 search-keyword">
+						<div class="form-group has-search">
+							<input type="text" class="form-control" placeholder="Bạn cần tìm gì?">
+							<i class="fa fa-search position-icon-search"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 search-location">
+						<div class="col-xs-12 col-sm-5 col-md-5 form-group choose-location">
+							<select name="" id="" class="form-control">
+								<option value="">Toàn quốc</option>
+								<option value="">Đà Nẵng</option>
+								<option value="">Tp. Hồ Chí Minh</option>
+								<option value="">Hà Nội</option>
+							</select>
+							<i class="fa fa-map-marker-alt position-icon-search"></i>
+						</div>
+						<div class="col-xs-12 col-sm-5 col-md-5 form-group choose-location choose-cate">
+							<select name="" id="" class="form-control">
+								<option value="">Bất động sản</option>
+								<option value="">Xe</option>
+								<option value="">Điện tử</option>
+								<option value="">Điện máy</option>
+							</select>
+						</div>
+						<div class="col-xs-12 col-sm-2 col-md-2 form-group btn-form-search">
+							<button class="form-control">
+								<i class="fa fa-search"></i>
+								Tìm
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div> <!--Box Form Search-->
 	<!-- Menu flixed -->
 	<nav id="menu-toggle">
 		<ul id="primary-menu" class="primary-menu">
@@ -203,16 +233,6 @@
 	<!-- ---------------------------------Content Categories----------------------------------------------- -->
 	<div class="box-content">
 		<div class="container">
-			<div class="big-box-small-categories">
-				<div class="col-xs-12 col-sm-12 col-md-12 big-box box-small-categories bg-bds">
-					<p class="small-categories">
-						<strong>Danh mục con: </strong>
-						<a href="">Nhà ở</a>
-						<a href="">Căn hộ</a>
-						<a href="">Biệt thự</a>
-					</p>	
-				</div>
-			</div> <!--End Big box small categories-->
 			<div class="posts-by-category">
 				<div class="col-xs-12 col-sm-12 col-md-9 big-box big-box-posts-new b-bds">
 					<div class="col-xs-12 col-sm-12 col-md-12 tilte-cate-post-new">
@@ -220,6 +240,12 @@
 							<span class="cl-bds b-bds">Nhà</span>
 							<sup class="temp-new">Tất cả</sup>
 						</h3>
+						<div class="box-show-cate box-show-categories">
+							<a href="" class="show-post-cate active">Tất cả</a>
+							<a href="" class="show-post-cate">Xe 4 chỗ</a>
+							<a href="" class="show-post-cate">Xe 7 chỗ</a>
+							<a href="" class="show-post-cate">Xe 16 chỗ</a>
+						</div>
 						<div class="button-filter">
 							<button class="btn btn-danger btn-filter" onclick="openFormFilter()">
 								<i class="fa fa-filter"></i>
@@ -246,17 +272,6 @@
 									<label for="" class="control-label">Quận/Huyện: </label>
 									<select class="form-control">
 										<option>Quận/Huyện</option>
-										<option>Quận 1</option>
-										<option>Quận 1</option>
-										<option>Quận 1</option>
-										<option>Quận 1</option>
-										<option>Quận 1</option>
-									</select>
-								</div>
-								<div class="form-group-filter">
-									<label for="" class="control-label">Khu vực: </label>
-									<select class="form-control">
-										<option>Khu vực</option>
 										<option>Quận 1</option>
 										<option>Quận 1</option>
 										<option>Quận 1</option>
@@ -295,254 +310,333 @@
 							</form>
 						</div><!--End form filter-->
 						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
-							<div class="entry-thumbnail">
-								<video preload="none" poster="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" width="100%" controls="">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
 									<source type="video/mp4" 
 									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-								<div class="info-posts">
-									<p class="type-posts bg-bds b-t-ba-bds">
-										Nhà hàng									
-									</p> <!--Xuất DL Loại tin-->
-									<p class="price-posts">
-										1 tỷ				
-									</p> <!--Xuất Giá-->
+								</video>		
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-8 entry-description">
+								<div class="entry-header">
+									<h2>
+										<a href="">
+											Cần thuê quán nhậu 
+										</a>
+									</h2>
 								</div>
-								<p class="info-to-rent">
-									<span class="glyphicon glyphicon-ok"></span>
-									&nbsp;Đã thuê
-								</p>			
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p class="cl-bds">
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-
-								</p>
-								<p class="description">
-									Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
-									- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
-									- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
-									- Hướng Đông Nam 
-								</p>
-							</div>
+								<div class="entry-content">
+									<p class="cl-bds">
+										<span>
+											<i class="fa fa-map-marker-alt"></i>
+											Đà nẵng	
+										</span>
+										<span>
+											<i class="fa fa-th-large"></i>
+											Diện tích
+										</span>
+										<span>
+											<i class="fa fa-dollar-sign"></i>
+											10 triệu/tháng
+										</span>
+										<span>
+											<i class="fa fa-eye"></i>
+											2000
+										</span>
+										<span>
+											<i class="fa fa-clock"></i>
+											Thời gian
+										</span>
+									</p>
+									<p class="description">
+										Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+										- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+										- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+										- Hướng Đông Nam 
+									</p>
+								</div>
+							</div>	
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
-							<div class="entry-thumbnail">
-								<video preload="none" poster="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" width="100%" controls="">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
 									<source type="video/mp4" 
 									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-								<div class="info-posts">
-									<p class="type-posts bg-bds b-t-ba-bds">
-										Nhà hàng									
-									</p> <!--Xuất DL Loại tin-->
-									<p class="price-posts">
-										1 tỷ				
-									</p> <!--Xuất Giá-->
+								</video>		
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-8 entry-description">
+								<div class="entry-header">
+									<h2>
+										<a href="">
+											Cần thuê quán nhậu 
+										</a>
+									</h2>
 								</div>
-								<p class="info-to-rent">
-									<span class="glyphicon glyphicon-ok"></span>
-									&nbsp;Đã thuê
-								</p>			
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p class="cl-bds">
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-
-								</p>
-								<p class="description">
-									Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
-									- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
-									- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
-									- Hướng Đông Nam 
-								</p>
-							</div>
+								<div class="entry-content">
+									<p class="cl-bds">
+										<span>
+											<i class="fa fa-map-marker-alt"></i>
+											Đà nẵng	
+										</span>
+										<span>
+											<i class="fa fa-th-large"></i>
+											Diện tích
+										</span>
+										<span>
+											<i class="fa fa-dollar-sign"></i>
+											10 triệu/tháng
+										</span>
+										<span>
+											<i class="fa fa-eye"></i>
+											2000
+										</span>
+										<span>
+											<i class="fa fa-clock"></i>
+											Thời gian
+										</span>
+									</p>
+									<p class="description">
+										Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+										- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+										- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+										- Hướng Đông Nam 
+									</p>
+								</div>
+							</div>	
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
-							<div class="entry-thumbnail">
-								<video preload="none" poster="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" width="100%" controls="">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
 									<source type="video/mp4" 
 									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-								<div class="info-posts">
-									<p class="type-posts bg-bds b-t-ba-bds">
-										Nhà hàng									
-									</p> <!--Xuất DL Loại tin-->
-									<p class="price-posts">
-										1 tỷ				
-									</p> <!--Xuất Giá-->
+								</video>		
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-8 entry-description">
+								<div class="entry-header">
+									<h2>
+										<a href="">
+											Cần thuê quán nhậu 
+										</a>
+									</h2>
 								</div>
-								<p class="info-to-rent">
-									<span class="glyphicon glyphicon-ok"></span>
-									&nbsp;Đã thuê
-								</p>			
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p class="cl-bds">
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-
-								</p>
-								<p class="description">
-									Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
-									- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
-									- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
-									- Hướng Đông Nam 
-								</p>
-							</div>
+								<div class="entry-content">
+									<p class="cl-bds">
+										<span>
+											<i class="fa fa-map-marker-alt"></i>
+											Đà nẵng	
+										</span>
+										<span>
+											<i class="fa fa-th-large"></i>
+											Diện tích
+										</span>
+										<span>
+											<i class="fa fa-dollar-sign"></i>
+											10 triệu/tháng
+										</span>
+										<span>
+											<i class="fa fa-eye"></i>
+											2000
+										</span>
+										<span>
+											<i class="fa fa-clock"></i>
+											Thời gian
+										</span>
+									</p>
+									<p class="description">
+										Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+										- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+										- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+										- Hướng Đông Nam 
+									</p>
+								</div>
+							</div>	
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
-							<div class="entry-thumbnail">
-								<video preload="none" poster="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" width="100%" controls="">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
 									<source type="video/mp4" 
 									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-								<div class="info-posts">
-									<p class="type-posts bg-bds b-t-ba-bds">
-										Nhà hàng									
-									</p> <!--Xuất DL Loại tin-->
-									<p class="price-posts">
-										1 tỷ				
-									</p> <!--Xuất Giá-->
+								</video>		
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-8 entry-description">
+								<div class="entry-header">
+									<h2>
+										<a href="">
+											Cần thuê quán nhậu 
+										</a>
+									</h2>
 								</div>
-								<p class="info-to-rent">
-									<span class="glyphicon glyphicon-ok"></span>
-									&nbsp;Đã thuê
-								</p>			
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p class="cl-bds">
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-
-								</p>
-								<p class="description">
-									Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
-									- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
-									- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
-									- Hướng Đông Nam 
-								</p>
-							</div>
+								<div class="entry-content">
+									<p class="cl-bds">
+										<span>
+											<i class="fa fa-map-marker-alt"></i>
+											Đà nẵng	
+										</span>
+										<span>
+											<i class="fa fa-th-large"></i>
+											Diện tích
+										</span>
+										<span>
+											<i class="fa fa-dollar-sign"></i>
+											10 triệu/tháng
+										</span>
+										<span>
+											<i class="fa fa-eye"></i>
+											2000
+										</span>
+										<span>
+											<i class="fa fa-clock"></i>
+											Thời gian
+										</span>
+									</p>
+									<p class="description">
+										Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+										- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+										- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+										- Hướng Đông Nam 
+									</p>
+								</div>
+							</div>	
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
-							<div class="entry-thumbnail">
-								<video preload="none" poster="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" width="100%" controls="">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
 									<source type="video/mp4" 
 									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-								<div class="info-posts">
-									<p class="type-posts bg-bds b-t-ba-bds">
-										Nhà hàng									
-									</p> <!--Xuất DL Loại tin-->
-									<p class="price-posts">
-										1 tỷ				
-									</p> <!--Xuất Giá-->
+								</video>		
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-8 entry-description">
+								<div class="entry-header">
+									<h2>
+										<a href="">
+											Cần thuê quán nhậu 
+										</a>
+									</h2>
 								</div>
-								<p class="info-to-rent">
-									<span class="glyphicon glyphicon-ok"></span>
-									&nbsp;Đã thuê
-								</p>			
+								<div class="entry-content">
+									<p class="cl-bds">
+										<span>
+											<i class="fa fa-map-marker-alt"></i>
+											Đà nẵng	
+										</span>
+										<span>
+											<i class="fa fa-th-large"></i>
+											Diện tích
+										</span>
+										<span>
+											<i class="fa fa-dollar-sign"></i>
+											10 triệu/tháng
+										</span>
+										<span>
+											<i class="fa fa-eye"></i>
+											2000
+										</span>
+										<span>
+											<i class="fa fa-clock"></i>
+											Thời gian
+										</span>
+									</p>
+									<p class="description">
+										Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+										- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+										- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+										- Hướng Đông Nam 
+									</p>
+								</div>
+							</div>	
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
+									<source type="video/mp4" 
+									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
+								</video>		
 							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
+							<div class="col-xs-12 col-sm-8 col-md-8 entry-description">
+								<div class="entry-header">
+									<h2>
+										<a href="">
+											Cần thuê quán nhậu 
+										</a>
+									</h2>
+								</div>
+								<div class="entry-content">
+									<p class="cl-bds">
+										<span>
+											<i class="fa fa-map-marker-alt"></i>
+											Đà nẵng	
+										</span>
+										<span>
+											<i class="fa fa-th-large"></i>
+											Diện tích
+										</span>
+										<span>
+											<i class="fa fa-dollar-sign"></i>
+											10 triệu/tháng
+										</span>
+										<span>
+											<i class="fa fa-eye"></i>
+											2000
+										</span>
+										<span>
+											<i class="fa fa-clock"></i>
+											Thời gian
+										</span>
+									</p>
+									<p class="description">
+										Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+										- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+										- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+										- Hướng Đông Nam 
+									</p>
+								</div>
+							</div>	
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
+									<source type="video/mp4" 
+									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
+								</video>		
 							</div>
-							<div class="entry-content">
-								<p class="cl-bds">
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-
-								</p>
-								<p class="description">
-									Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
-									- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
-									- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
-									- Hướng Đông Nam 
-								</p>
-							</div>
+							<div class="col-xs-12 col-sm-8 col-md-8 entry-description">
+								<div class="entry-header">
+									<h2>
+										<a href="">
+											Cần thuê quán nhậu 
+										</a>
+									</h2>
+								</div>
+								<div class="entry-content">
+									<p class="cl-bds">
+										<span>
+											<i class="fa fa-map-marker-alt"></i>
+											Đà nẵng	
+										</span>
+										<span>
+											<i class="fa fa-th-large"></i>
+											Diện tích
+										</span>
+										<span>
+											<i class="fa fa-dollar-sign"></i>
+											10 triệu/tháng
+										</span>
+										<span>
+											<i class="fa fa-eye"></i>
+											2000
+										</span>
+										<span>
+											<i class="fa fa-clock"></i>
+											Thời gian
+										</span>
+									</p>
+									<p class="description">
+										Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+										- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+										- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+										- Hướng Đông Nam 
+									</p>
+								</div>
+							</div>	
 						</article> <!-- End POST -->
 						<div class="col-xs-12 col-sm-12 col-md-12">
 							<nav aria-label="Page navigation" class="pagination-bottom">
@@ -1030,6 +1124,40 @@
 				btnFilter.style.display = 'block';
 			}
 		};
+	</script>
+	<!-- toggle Search -->
+	<script>
+		var btnSearch = document.getElementById('btn-search');
+		var boxFormSearch = document.getElementById('box-form-search');
+		btnSearch.addEventListener('click', onSearch);
+		function onSearch(){
+			if (boxFormSearch.style.display == 'block') {
+				btnSearch.children[1].style.display = 'none';
+				boxFormSearch.style.display = 'none';
+			}else{
+				btnSearch.children[1].style.display = 'block';
+				boxFormSearch.style.display = 'block'
+			}
+			
+		}
+	</script>
+	<!-- Video -->
+	<script>
+		var hoverVideos = document.querySelectorAll("video");
+		for (let hoverVideo of hoverVideos){
+			hoverVideo.addEventListener('mouseover', showControlVideo);
+			function showControlVideo(){
+				var control = document.createAttribute("controls");
+				hoverVideo.attributes.setNamedItem(control);
+				var autoPlay = document.createAttribute("autoplay");
+				hoverVideo.attributes.setNamedItem(autoPlay);
+			}
+			hoverVideo.addEventListener('mouseout', hiddenControlVideo);
+			function hiddenControlVideo(){
+				hoverVideo.removeAttribute("controls");
+				hoverVideo.removeAttribute("autoplay");
+			}
+		}
 	</script>
 </body>
 </html>

@@ -132,30 +132,30 @@
 						<img src="../media/img/logo-clipchothue.png">
 					</a>
 				</div><!--Logo-->
-				<div class="box-form-search">
+				<!-- <div class="box-form-search">
 					<form method="get" class="searchform" action="">
 						<span class="glyphicon glyphicon-chevron-down search-select-icon"></span>
 						<select name="">
 							<option value="">Toàn quốc</option>
 							<option value="can-ho">Tp. Hồ Chí Minh</option>
-							<option value="nha">Hà Nội</option>							
+							<option value="nha">Hà Nội</option>				
 						</select>
 						<input type="text" class="field s" name="s" placeholder="Nhập từ khóa tìm kiếm">
 						<button type="submit" name="submit">
 							<span class="glyphicon glyphicon-search"></span>
 						</button>
 					</form>
-				</div><!--Form Search-->
+				</div> --><!--Form Search-->
 				<div class="dang-tin">
 					<div class="btn-destop">
-						<a href="" style="display: none">
-							<i class="fa fa-sign-out-alt"></i> Đăng nhập
+						<a href="" class="btn-dangtin">
+							<i class="fa fa-pencil-alt"></i> Đăng tin miễn phí
 						</a>
 						<a href="">
 							<i class="fa fa-user"></i> Đăng nhập
-						</a>
-						<a href="" class="btn-dangtin">
-							<i class="fa fa-pencil-alt"></i> Đăng tin miễn phí
+						</a>	
+						<a href="" style="display: none">
+							<i class="fa fa-sign-out-alt"></i> Đăng xuất
 						</a>
 					</div>
 					<div class="btn-mobile">
@@ -165,14 +165,50 @@
 						<a href="">
 							<i class="fa fa-user"></i>
 						</a>
-						<a href="">
+						<a href="" style="display: none">
 							<i class="fa fa-sign-out-alt"></i>
 						</a>
 					</div>
+					<button class="btn-search" id="btn-search">
+						<i class="fa fa-search"></i>
+						<span></span>
+					</button>
 				</div><!--Đăng tin miễn phí-->
 			</div>
 		</div>		
 	</header><!--header-->
+	
+	<div class="box-form-search" id="box-form-search">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<form action="">
+					<div class="col-xs-12 col-sm-7 col-md-7 search-keyword">
+						<div class="form-group has-search">
+							<input type="text" class="form-control" placeholder="Bạn cần tìm gì?">
+							<i class="fa fa-search position-icon-search"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-md-5 search-location">
+						<div class="col-xs-12 col-sm-8 col-md-9 form-group choose-location">
+							<select name="" id="" class="form-control">
+								<option value="">Toàn quốc</option>
+								<option value="">Đà Nẵng</option>
+								<option value="">Tp. Hồ Chí Minh</option>
+								<option value="">Hà Nội</option>
+							</select>
+							<i class="fa fa-map-marker-alt position-icon-search"></i>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3 form-group btn-form-search">
+							<button class="form-control">
+								<i class="fa fa-search"></i>
+								Tìm
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div> <!--Box Form Search-->
 	<!-- Menu flixed -->
 	<nav id="menu-toggle">
 		<ul id="primary-menu" class="primary-menu">
@@ -688,6 +724,22 @@
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
 		});
+	</script>
+	<!-- toggle Search -->
+	<script>
+		var btnSearch = document.getElementById('btn-search');
+		var boxFormSearch = document.getElementById('box-form-search');
+		btnSearch.addEventListener('click', onSearch);
+		function onSearch(){
+			if (boxFormSearch.style.display == 'block') {
+				btnSearch.children[1].style.display = 'none';
+				boxFormSearch.style.display = 'none';
+			}else{
+				btnSearch.children[1].style.display = 'block';
+				boxFormSearch.style.display = 'block'
+			}
+			
+		}
 	</script>
 </body>
 </html>
