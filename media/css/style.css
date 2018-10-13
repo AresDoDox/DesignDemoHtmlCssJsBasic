@@ -175,6 +175,7 @@ header{
 .search-location>div.choose-location>i{
 	width: 20px;
 	text-align: center;
+	color: #7d0000;
 }
 .btn-form-search{
 	background: #C41415;
