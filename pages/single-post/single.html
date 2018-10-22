@@ -19,108 +19,6 @@
 	<button id="myBtn" title="Go to top">
 		<i class="fa fa-angle-up" style="font-size: 20px;"></i>
 	</button> <!--Back to Top-->
-	<nav class="menu-bar-top">
-		<div class="container">
-			<ul>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/bietthu-cate.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Bất động sản
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/xe-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Xe
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/dientu-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Điện tử
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/dienmay-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Điện máy
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/nongsan-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Nông sản
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/dulich-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Du lịch
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/lamdep-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Làm đẹp
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/dichvu-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Dịch vụ
-						</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav><!--menu top-->
 	<header id="header">
 		<div class="container">
 			<div class="col-xs-12 col-sm-12 col-md-12">
@@ -132,6 +30,20 @@
 						<img src="../../media/img/logo-clipchothue.png">
 					</a>
 				</div><!--Logo-->
+				<div class="box-form-search" id="box-form-search">
+					<form method="get" class="searchform" action="">
+						<!-- <span class="glyphicon glyphicon-chevron-down search-select-icon"></span> -->
+						<select name="">
+							<option value="">Toàn quốc</option>
+							<option value="can-ho">Tp. Hồ Chí Minh</option>
+							<option value="nha">Hà Nội</option>				
+						</select>
+						<input type="text" class="field s" name="s" placeholder="Nhập từ khóa tìm kiếm">
+						<button type="submit" name="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div> <!--Form Search-->
 				<div class="dang-tin">
 					<div class="btn-destop">
 						<a href="" class="btn-dangtin">
@@ -164,38 +76,6 @@
 		</div>		
 	</header><!--header-->
 	
-	<div class="box-form-search" id="box-form-search">
-		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12">
-				<form action="">
-					<div class="col-xs-12 col-sm-7 col-md-7 search-keyword">
-						<div class="form-group has-search">
-							<input type="text" class="form-control" placeholder="Bạn cần tìm gì?">
-							<i class="fa fa-search position-icon-search"></i>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-5 col-md-5 search-location">
-						<div class="col-xs-12 col-sm-8 col-md-9 form-group choose-location">
-							<select name="" id="" class="form-control">
-								<option value="">Toàn quốc</option>
-								<option value="">Đà Nẵng</option>
-								<option value="">Tp. Hồ Chí Minh</option>
-								<option value="">Hà Nội</option>
-							</select>
-							<i class="fa fa-map-marker-alt position-icon-search"></i>
-						</div>
-						<div class="col-xs-12 col-sm-4 col-md-3 form-group btn-form-search">
-							<button class="form-control">
-								<i class="fa fa-search"></i>
-								Tìm
-							</button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>	
-	</div> <!--Box Form Search-->
-
 	<!-- Menu flixed -->
 	<nav id="menu-toggle">
 		<ul id="primary-menu" class="primary-menu">
@@ -229,54 +109,110 @@
 			<div class="posts-by-category">
 				<div class="col-xs-12 col-sm-12 col-md-9 big-box big-box-posts-new big-box-posts-new-single b-bds">
 					<div class="col-xs-12 col-sm-12 col-md-12 video-single-post">
-						<video width="100%" controls="">
-							<source type="video/mp4" 
-							src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-						</video>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12 tilte-cate-post-new">
-						<h1 class="title-cate title-single">
-							<span class="cl-bds b-bds">Tiêu đề bài viết</span>
-							<sup class="temp-check-hired">
-								<span class="glyphicon glyphicon-ok"></span>
-								&nbsp;Đã thuê
-							</sup>
-						</h1>
-						<p class="post-time">
-							Đăng ngày: 05/05/2050
-						</p> <!-- End ngày đăng -->
+						<video width="100%" controls ><source src="../../../media/img/video.mp4"></video>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 tilte-cate-post-new info-mobile-single">
+							<h1 class="title-cate title-single">
+								<span class="b-bds">Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế</span>
+								<sup class="temp-check-hired">
+									<span class="glyphicon glyphicon-ok"></span>
+									&nbsp;Đã thuê
+								</sup>
+							</h1>
+							<div class="time-share">
+								<div class="entry-icon-auth">
+									<img src="../../../media/img/user-icon.png" alt="">
+								</div>
+								<div class="entry-text-info">
+									<div class="entry-header">
+										<p class="auth-single">Tên tác giả</p>
+									</div>
+									<div class="entry-content">
+										<p>
+											<span>Xuất bản: </span>
+											<span>20/10/2018</span>
+										</p>
+									</div>
+								</div>
+								<div class="entry-icon-more more-single">
+									<button>
+										<svg version="1.1" 
+										id="Capa_1" 
+										xmlns="http://www.w3.org/2000/svg" 
+										xmlns:xlink="http://www.w3.org/1999/xlink" 
+										x="0px" 
+										y="0px" 
+										viewBox="0 0 408 408" 
+										style="enable-background:new 0 0 408 408;" 
+										xml:space="preserve">
+										<g>
+											<g id="more-vert">
+												<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+												s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+												S232.05,306,204,306z"/>
+											</g>
+										</g>
+									</svg>
+								</button>
+								<div class="box-more">
+									<button>Thêm vào Xem sau</button>
+									<button>Hủy</button>
+								</div>
+							</div>
+							<div class="post-share">
+								<p><i class="fa fa-thumbs-up"></i> 100</p>
+								<button id="btn-share"><i class="fa fa-share"></i> Share</button>
+								<ul id="block-share">
+									<span></span>
+									<li>Facebook</li>
+									<li>Zalo</li>
+									<li>Google+</li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+						</div>
 					</div><!--End Title-->
 					<div class="col-xs-12 col-sm-12 col-md-12 box-posts">
-						<p class="title-des"><strong>Chi tiết sản phẩm</strong></p>
-						<table class="tb-single-post">
-							<tbody>
-								<tr>
-									<td><strong>Loại:</strong></td>
-									<td>Căn hộ</td>
-									<td><strong>Diện tích:</strong></td>
-									<td>90&nbsp;m<sup>2</sup><br></td>
-									<td><strong>Giá:</strong></td>
-									<td>1 tỷ<br></td>
-								</tr>
-								<tr>
-									<td colspan="1"><strong>Điện thoại:</strong></td>
-									<td colspan="1">
-										<a href="tel:0914106080">0914106080</a>   
-									</td>
-									<td colspan="1"><strong>Địa chỉ:</strong></td>
-									<td colspan="3">
-										96 Lê văn hưu<a href="https://www.google.com/maps?q=96 Lê văn hưu" target="_blank">&nbsp;Bản đồ</a><br>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<p class="title-des"><strong>Mô tả sản phẩm</strong></p>
-						<p id="content-post">
-							Mỗi phân khúc bất động sản đều có điểm riêng và thế mạnh để phát triển của mình. Nhưng tùy theo sở thích và khả năng phán đoán, nhận định thị trường của mỗi người đầu tư để đầu tư mang lại hiệu quả cao nhất. Phân khúc căn hộ cũng vậy, nếu đầu tư sai cũng không dễ gì thu về được lợi nhuận.  Bài viết chia sẻ bạn những hiểu biết về đầu tư phân khúc căn hộ như thế nào để dễ dàng thu lợi nhuận nhất.
-							Căn hộ mức giá tầm trung là lựa chọn của nhiều nhà đầu tư<br>
-
-							Có nhiều loại căn hộ trong phân khúc căn hộ như: Căn hộ cao cấp, căn hộ tầm trung và căn hộ giá rẻ. Rất nhiều nhà đầu tư nhắm vào phân khúc căn hộ tầm trung bởi nhiều lý do. Trước hết phải nói đến tính khó chuyển nhượng, thuê tay cũng như kinh doanh tìm khách hàng cho căn hộ cao cấp. Thuộc dòng cao cấp nên căn hộ khá kén khách, vốn đầu tư cao nhưng lại rất khó thu hồi.
+						<p class="title-des">
+							<strong>Chi tiết sản phẩm</strong>
 						</p>
+						<div class="box-table">
+							<div class="table-single">
+								<div class="table-row-group">
+									<div class="table-single-cell">
+										<p>Loại:</p>
+										<span>Nhà bán</span>
+									</div>
+									<div class="table-single-cell">
+										<p>Diện tích:</p>
+										<span>100m2</span>
+									</div>
+									<div class="table-single-cell">
+										<p>Giá:</p>
+										<span>1 tỷ</span>
+									</div>
+								</div>
+								<div class="table-row-group">
+									<div class="table-single-cell">
+										<p>Điện thoại:</p>
+										<span>0914 10 60 80</span>
+									</div>
+									<div class="table-single-cell">
+										<p>Địa chỉ:</p>
+										<span>96 Lê Văn Hưu</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="title-des">
+							<strong>Mô tả sản phẩm</strong>
+						</p>
+						<div id="content-post">
+							<p>Mỗi phân khúc bất động sản đều có điểm riêng và thế mạnh để phát triển của mình. Nhưng tùy theo sở thích và khả năng phán đoán, nhận định thị trường của mỗi người đầu tư để đầu tư mang lại hiệu quả cao nhất. Phân khúc căn hộ cũng vậy, nếu đầu tư sai cũng không dễ gì thu về được lợi nhuận.  Bài viết chia sẻ bạn những hiểu biết về đầu tư phân khúc căn hộ như thế nào để dễ dàng thu lợi nhuận nhất.</p>
+							<p>Căn hộ mức giá tầm trung là lựa chọn của nhiều nhà đầu tư.</p>
+
+							<p>Có nhiều loại căn hộ trong phân khúc căn hộ như: Căn hộ cao cấp, căn hộ tầm trung và căn hộ giá rẻ. Rất nhiều nhà đầu tư nhắm vào phân khúc căn hộ tầm trung bởi nhiều lý do. Trước hết phải nói đến tính khó chuyển nhượng, thuê tay cũng như kinh doanh tìm khách hàng cho căn hộ cao cấp. Thuộc dòng cao cấp nên căn hộ khá kén khách, vốn đầu tư cao nhưng lại rất khó thu hồi.</p>
+						</div>
 					</div> <!--End Box-posts-->
 
 					<!-- Comment ------------ -->
@@ -299,34 +235,6 @@
 							<p><strong>Username </strong>Kiến trúc sư lừng danh Bill Bensley tái hiện lịch sử và văn hóa</p>
 						</div>
 					</div> <!--End Box-Comments-->
-					<div class="col-xs-12 col-sm-12 col-md-12 box-reply-comments">
-						<form action="" class="content-comment">
-							<img src="../../media/img/user-icon.png" alt="">
-							<div class="box-input-cmt">
-								<input type="text" class="reply-cmt" placeholder="Viết bình luận....">
-							</div>
-							<button type="submit" class="btn-submit-comment">
-								Gửi
-							</button>
-						</form>
-					</div> <!--End Box-Comments - Form đã đăng nhập-->
-
-					<div class="col-xs-12 col-sm-12 col-md-12 box-reply-comments-info">
-						<form action="" class="content-comment">
-							<img src="../../media/img/user-icon.png" alt="">
-							<div class="box-input-cmt">
-								<input type="text" class="reply-cmt" placeholder="Viết bình luận....">
-								<input type="text" class="reply-cmt-info" placeholder="Họ tên">
-								<input type="phone" class="reply-cmt-info" placeholder="Số điện thoại">
-								<input type="email" class="reply-cmt-info" placeholder="Email">
-								<p>Vui lòng điền đầy đủ thông tin để gửi bình luận</p>
-							</div>
-							<button type="submit" class="btn-submit-cmt-info">
-								Gửi
-							</button>
-						</form>
-					</div> <!--End Box-Comments - Form chưa đăng nhập-->
-					<!-- End Comment -->
 				</div> <!--End Content category-->
 
 				<div class="col-xs-12 col-sm-12 col-md-3 big-box-sidebar">
@@ -339,124 +247,107 @@
 						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
 							<div class="img-related-post">
 								<a href="">
-									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Sticky" title="Sticky">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
 								</a>
 							</div>
 							<div class="title-related-post">
 								<a href="">
-									Sticky
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
 								</a>
-							</div>
-							<div>
-								<strong>Giá: 100 triệu</strong>
 							</div>
 						</div><!--End related-post-->
 						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
 							<div class="img-related-post">
 								<a href="">
-									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Sticky" title="Sticky">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
 								</a>
 							</div>
 							<div class="title-related-post">
 								<a href="">
-									Sticky
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
 								</a>
-							</div>
-							<div>
-								<strong>Giá: 100 triệu</strong>
 							</div>
 						</div><!--End related-post-->
 						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
 							<div class="img-related-post">
 								<a href="">
-									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Sticky" title="Sticky">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
 								</a>
 							</div>
 							<div class="title-related-post">
 								<a href="">
-									Sticky
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
 								</a>
-							</div>
-							<div>
-								<strong>Giá: 100 triệu</strong>
 							</div>
 						</div><!--End related-post-->
 						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
 							<div class="img-related-post">
 								<a href="">
-									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Sticky" title="Sticky">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
 								</a>
 							</div>
 							<div class="title-related-post">
 								<a href="">
-									Sticky
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
 								</a>
-							</div>
-							<div>
-								<strong>Giá: 100 triệu</strong>
 							</div>
 						</div><!--End related-post-->
 						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
 							<div class="img-related-post">
 								<a href="">
-									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Sticky" title="Sticky">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
 								</a>
 							</div>
 							<div class="title-related-post">
 								<a href="">
-									Sticky
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
 								</a>
-							</div>
-							<div>
-								<strong>Giá: 100 triệu</strong>
 							</div>
 						</div><!--End related-post-->
 						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
 							<div class="img-related-post">
 								<a href="">
-									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Sticky" title="Sticky">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
 								</a>
 							</div>
 							<div class="title-related-post">
 								<a href="">
-									Sticky
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
 								</a>
-							</div>
-							<div>
-								<strong>Giá: 100 triệu</strong>
 							</div>
 						</div><!--End related-post-->
 					</div> <!--End sidebar posts new-->
 					<div class="col-xs-12 col-sm-12 col-md-12 big-box sidebar b-bds">
 						<div class="col-xs-12 col-sm-12 col-md-12 tilte-cate-post-new">
 							<h3 class="title-cate">
-								<span class="cl-bds b-bds">Danh mục</span>
+								<span class="cl-bds b-bds">Danh mục liên quan</span>
 							</h3>
 						</div><!--End Title-->
 						<div class="col-xs-12 col-sm-12 col-md-12 categories-name">
 							<ul>
 								<li>
-									<a href="">Bất động sản</a>
-									<ul>
-										<li>
-											<a href="">Nhà</a>
-										</li>
-										<li>
-											<a href="">Biệt thự</a>
-										</li>
-									</ul>
+									<a href="">Đất nền</a>
 								</li>
 								<li>
-									<a href="">Bất động sản</a>
+									<a href="">Nhà bán</a>
 								</li>
 								<li>
-									<a href="">Bất động sản</a>
+									<a href="">Căn hộ</a>
 								</li>
 								<li>
-									<a href="">Bất động sản</a>
+									<a href="">Đất rừng - Trang trại</a>
 								</li>
 								<li>
-									<a href="">Bất động sản</a>
+									<a href="">Nghỉ dưỡng</a>
+								</li>
+								<li>
+									<a href="">Khách sạn</a>
+								</li>
+								<li>
+									<a href="">Kho - Nhà xưởng</a>
+								</li>
+								<li>
+									<a href="">Dự án</a>
 								</li>
 							</ul>
 						</div><!--End sidebar tagname-->
@@ -464,16 +355,15 @@
 					<div class="col-xs-12 col-sm-12 col-md-12 big-box sidebar b-bds">
 						<div class="col-xs-12 col-sm-12 col-md-12 tilte-cate-post-new">
 							<h3 class="title-cate">
-								<span class="cl-bds b-bds">Từ khóa</span>
+								<span class="cl-bds b-bds">Từ khóa liên quan</span>
 							</h3>
 						</div><!--End Title-->
 						<div class="col-xs-12 col-sm-12 col-md-12 tagsname">
-							<a href="" class="cl-bds b-bds">Nhà ở</a>
-							<a href="" class="cl-bds b-bds">Biệt thự</a>
-							<a href="" class="cl-bds b-bds">Đà Nẵng</a>
-							<a href="" class="cl-bds b-bds">Hà Nội</a>
+							<a href="" class="cl-bds b-bds">Nhà giá rẻ</a>
 							<a href="" class="cl-bds b-bds">Nhà mặt phố</a>
-							<a href="" class="cl-bds b-bds">Đất nền giá rẻ</a>
+							<a href="" class="cl-bds b-bds">Nhà trung tâm</a>
+							<a href="" class="cl-bds b-bds">Nhà đẹp giá rẻ</a>
+							<a href="" class="cl-bds b-bds">Nhà 3 tầng</a>
 						</div><!--End sidebar tagname-->
 					</div> <!--End sidebar tagname-->
 				</div><!--End Big box Sidebar-->
@@ -796,7 +686,37 @@
 				btnSearch.children[1].style.display = 'block';
 				boxFormSearch.style.display = 'block'
 			}
-			
+
+		}
+	</script>
+	<!-- btn share -->
+	<script>
+		var btnShare = document.getElementById('btn-share');
+		var blockShare = document.getElementById('block-share');
+		btnShare.addEventListener('click', onShare);
+		function onShare(){
+			if (blockShare.style.display == 'block') {
+				blockShare.style.display = 'none';
+			}else{
+				blockShare.style.display = 'block'
+			}
+
+		}
+	</script>
+	<!-- Button more -->
+	<script type="text/javascript">
+		var btnMores = document.querySelectorAll(".entry-icon-more");
+		for (let btnMore of btnMores){
+			btnMore.addEventListener('click', showBoxMore);
+			function showBoxMore(event){
+				if (event.target.tagName == 'path' || event.target.tagName == 'svg' ||event.target.tagName == 'BUTTON'){
+					if (btnMore.children[1].style.display == "block") {
+						btnMore.children[1].style.display = "none";
+					}else{
+						btnMore.children[1].style.display = "block";
+					}	
+				}
+			}
 		}
 	</script>
 </body>

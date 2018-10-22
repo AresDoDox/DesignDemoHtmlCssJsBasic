@@ -19,108 +19,6 @@
 	<button id="myBtn" title="Go to top">
 		<i class="fa fa-angle-up" style="font-size: 20px;"></i>
 	</button> <!--Back to Top-->
-	<nav class="menu-bar-top">
-		<div class="container">
-			<ul>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../media/img/cate-img/bietthu-cate.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Bất động sản
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../media/img/cate-img/xe-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Xe
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../media/img/cate-img/dientu-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Điện tử
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../media/img/cate-img/dienmay-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Điện máy
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../media/img/cate-img/nongsan-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Nông sản
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../media/img/cate-img/dulich-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Du lịch
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../media/img/cate-img/lamdep-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Làm đẹp
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../media/img/cate-img/dichvu-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Dịch vụ
-						</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav><!--menu top-->
 	<header id="header">
 		<div class="container">
 			<div class="col-xs-12 col-sm-12 col-md-12">
@@ -132,6 +30,20 @@
 						<img src="../../media/img/logo-clipchothue.png">
 					</a>
 				</div><!--Logo-->
+				<div class="box-form-search" id="box-form-search">
+					<form method="get" class="searchform" action="">
+						<!-- <span class="glyphicon glyphicon-chevron-down search-select-icon"></span> -->
+						<select name="">
+							<option value="">Toàn quốc</option>
+							<option value="can-ho">Tp. Hồ Chí Minh</option>
+							<option value="nha">Hà Nội</option>				
+						</select>
+						<input type="text" class="field s" name="s" placeholder="Nhập từ khóa tìm kiếm">
+						<button type="submit" name="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div> <!--Form Search-->
 				<div class="dang-tin">
 					<div class="btn-destop">
 						<a href="" class="btn-dangtin">
@@ -163,46 +75,6 @@
 			</div>
 		</div>		
 	</header><!--header-->
-	
-	<div class="box-form-search" id="box-form-search">
-		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12">
-				<form action="">
-					<div class="col-xs-12 col-sm-6 col-md-6 search-keyword">
-						<div class="form-group has-search">
-							<input type="text" class="form-control" placeholder="Bạn cần tìm gì?">
-							<i class="fa fa-search position-icon-search"></i>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 search-location">
-						<div class="col-xs-12 col-sm-5 col-md-5 form-group choose-location">
-							<select name="" id="" class="form-control">
-								<option value="">Toàn quốc</option>
-								<option value="">Đà Nẵng</option>
-								<option value="">Tp. Hồ Chí Minh</option>
-								<option value="">Hà Nội</option>
-							</select>
-							<i class="fa fa-map-marker-alt position-icon-search"></i>
-						</div>
-						<div class="col-xs-12 col-sm-5 col-md-5 form-group choose-location choose-cate">
-							<select name="" id="" class="form-control">
-								<option value="">Bất động sản</option>
-								<option value="">Xe</option>
-								<option value="">Điện tử</option>
-								<option value="">Điện máy</option>
-							</select>
-						</div>
-						<div class="col-xs-12 col-sm-2 col-md-2 form-group btn-form-search">
-							<button class="form-control">
-								<i class="fa fa-search"></i>
-								Tìm
-							</button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>	
-	</div> <!--Box Form Search-->
 
 	<nav id="menu-toggle">
 		<ul id="primary-menu" class="primary-menu">
@@ -322,457 +194,721 @@
 						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
 							<div class="entry-thumbnail">
 								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
-							</div>
-						</article> <!-- End POST -->
-						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
-							<div class="entry-thumbnail">
-								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
 							</div>
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
 							<div class="entry-thumbnail">
 								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
-							</div>
-						</article> <!-- End POST -->
-						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
-							<div class="entry-thumbnail">
-								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
 							</div>
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
 							<div class="entry-thumbnail">
 								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
-							</div>
-						</article> <!-- End POST -->
-						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
-							<div class="entry-thumbnail">
-								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
 							</div>
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
 							<div class="entry-thumbnail">
 								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
-							</div>
-						</article> <!-- End POST -->
-						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
-							<div class="entry-thumbnail">
-								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
 							</div>
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
 							<div class="entry-thumbnail">
 								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
-							</div>
-						</article> <!-- End POST -->
-						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
-							<div class="entry-thumbnail">
-								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
 							</div>
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
 							<div class="entry-thumbnail">
 								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
-							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
-							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
 							</div>
 						</article> <!-- End POST -->
 						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
 							<div class="entry-thumbnail">
 								<video width="100%">
-									<source type="video/mp4" 
-									src="http://clipchothue.vn/wp-content/uploads/2018/09/cau-rong-phun-lua.mp4">
-								</video>
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
 							</div>
-							<div class="entry-header">
-								<h2>
-									<a href="">
-										Cần thuê quán nhậu 
-									</a>
-								</h2>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
+							<div class="entry-thumbnail">
+								<video width="100%">
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
 							</div>
-							<div class="entry-content">
-								<p>
-									<span>
-										<i class="fa fa-map-marker-alt"></i>
-										Đà nẵng	
-									</span>
-									<span>
-										<i class="fa fa-th-large"></i>
-										Diện tích
-									</span>
-								</p>
-								<p>
-									<span>
-										<i class="fa fa-eye"></i>
-										2000
-									</span>
-									<span>
-										<i class="fa fa-clock"></i>
-										Thời gian
-									</span>
-								</p>
-								<p>10 triệu/tháng</p>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
+							<div class="entry-thumbnail">
+								<video width="100%">
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
+							<div class="entry-thumbnail">
+								<video width="100%">
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
+							<div class="entry-thumbnail">
+								<video width="100%">
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-6 col-md-3 box-post">
+							<div class="entry-thumbnail">
+								<video width="100%">
+									<source src="../../media/img/video.mp4">
+									</video>
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button id="btn-more">
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
 							</div>
 						</article> <!-- End POST -->
 						<div class="col-xs-12 col-sm-12 col-md-12">
@@ -1127,7 +1263,7 @@
 				btnSearch.children[1].style.display = 'block';
 				boxFormSearch.style.display = 'block'
 			}
-			
+
 		}
 	</script>
 	<!-- Video -->
@@ -1145,6 +1281,22 @@
 			function hiddenControlVideo(){
 				hoverVideo.removeAttribute("controls");
 				hoverVideo.removeAttribute("autoplay");
+			}
+		}
+	</script>
+	<!-- Button more -->
+	<script type="text/javascript">
+		var btnMores = document.querySelectorAll(".entry-icon-more");
+		for (let btnMore of btnMores){
+			btnMore.addEventListener('click', showBoxMore);
+			function showBoxMore(event){
+				if (event.target.tagName == 'path' || event.target.tagName == 'svg' ||event.target.tagName == 'BUTTON'){
+					if (btnMore.children[1].style.display == "block") {
+						btnMore.children[1].style.display = "none";
+					}else{
+						btnMore.children[1].style.display = "block";
+					}	
+				}
 			}
 		}
 	</script>
