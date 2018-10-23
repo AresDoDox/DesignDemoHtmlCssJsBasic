@@ -19,108 +19,6 @@
 	<button id="myBtn" title="Go to top">
 		<i class="fa fa-angle-up" style="font-size: 20px;"></i>
 	</button> <!--Back to Top-->
-<!-- 	<nav class="menu-bar-top">
-		<div class="container">
-			<ul>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/bietthu-cate.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Bất động sản
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/xe-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Xe
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/dientu-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Điện tử
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/dienmay-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Điện máy
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/nongsan-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Nông sản
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/dulich-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Du lịch
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/lamdep-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Làm đẹp
-						</a>
-					</div>
-				</li>
-				<li>
-					<div class="img-icon-cate">
-						<a href="">
-							<img src="../../../media/img/cate-img/dichvu-50.png" alt="">
-						</a>
-					</div>
-					<div class="title-big-cate">
-						<a href="">
-							Dịch vụ
-						</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav> --><!--menu top-->
 	<header id="header">
 		<div class="container">
 			<div class="col-xs-12 col-sm-12 col-md-12">
@@ -1183,14 +1081,33 @@
 			} ;
 		}
 	</script>
+	<!-- toggle Search -->
+	<script>
+		var btnSearch = document.getElementById('btn-search');
+		var boxFormSearch = document.getElementById('box-form-search');
+		btnSearch.addEventListener('click', onSearch);
+		function onSearch(){
+			if (boxFormSearch.style.display == 'block') {
+				btnSearch.children[1].style.display = 'none';
+				boxFormSearch.style.display = 'none';
+			}else{
+				btnSearch.children[1].style.display = 'block';
+				boxFormSearch.style.display = 'block'
+			}
+
+		}
+	</script>
 	<!-- Back To Top -->
 	<script>
 		window.onscroll = function() {scrollFunction()};
 		function scrollFunction() {
-			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+			if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
 				document.getElementById("myBtn").style.display = "block";
+				document.getElementById("header").style.position = "fixed";
+				document.getElementById("header").style.top = 0;
 			} else {
 				document.getElementById("myBtn").style.display = "none";
+				document.getElementById("header").style.position = "relative";
 			}
 		}
 		document.getElementById('myBtn').addEventListener("click", function(){

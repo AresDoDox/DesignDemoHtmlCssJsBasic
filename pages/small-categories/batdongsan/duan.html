@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='robots' content='noindex,follow' />
+	<title>Mua bán - Cho thuê Đà Nẵng</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
+	<link rel="shortcut icon" href="../../../media/img/favicon.png" sizes="16x16">
+	<link rel="stylesheet" href="../../../media/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../../../media/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../media/css/bootstrap-social.css">
+	<link rel="stylesheet" href="../../../media/css/style.css">
+	<link rel="stylesheet" href="../../../media/css/style-menu-toggle.css">
+	<link rel="stylesheet" href="../../../media/css/style-responsive.css">
+</head>
+<body>
+	<button id="myBtn" title="Go to top">
+		<i class="fa fa-angle-up" style="font-size: 20px;"></i>
+	</button> <!--Back to Top-->
+	<header id="header">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="icon-menu" id="btn-menu">
+					<span class="glyphicon glyphicon-menu-hamburger" id="icon-menu" aria-hidden="true"></span>
+				</div><!-- Button toggle menu -->
+				<div id="logo-clipchothue">
+					<a href="">
+						<img src="../../../media/img/logo-clipchothue.png">
+					</a>
+				</div><!--Logo-->
+				<div class="box-form-search" id="box-form-search">
+					<form method="get" class="searchform" action="">
+						<!-- <span class="glyphicon glyphicon-chevron-down search-select-icon"></span> -->
+						<select name="">
+							<option value="">Toàn quốc</option>
+							<option value="can-ho">Tp. Hồ Chí Minh</option>
+							<option value="nha">Hà Nội</option>				
+						</select>
+						<input type="text" class="field s" name="s" placeholder="Nhập từ khóa tìm kiếm">
+						<button type="submit" name="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div> <!--Form Search-->
+				<div class="dang-tin">
+					<div class="btn-destop">
+						<a href="" class="btn-dangtin">
+							<i class="fa fa-pencil-alt"></i> Đăng tin miễn phí
+						</a>
+						<a href="">
+							<i class="fa fa-user"></i> Đăng nhập
+						</a>	
+						<a href="" style="display: none">
+							<i class="fa fa-sign-out-alt"></i> Đăng xuất
+						</a>
+					</div>
+					<div class="btn-mobile">
+						<a href="">
+							<i class="fa fa-pencil-alt"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-user"></i>
+						</a>
+						<a href="" style="display: none">
+							<i class="fa fa-sign-out-alt"></i>
+						</a>
+					</div>
+					<button class="btn-search" id="btn-search">
+						<i class="fa fa-search"></i>
+						<span></span>
+					</button>
+				</div><!--Đăng tin miễn phí-->
+			</div>
+		</div>		
+	</header><!--header-->
+
+	<!-- Menu flixed -->
+	<nav id="menu-toggle">
+		<ul id="primary-menu" class="primary-menu">
+			<li class="active">
+				<a href="">Trang chủ</a>
+			</li>
+			<li>
+				<a href="">
+					Bất động sản
+					<span class="glyphicon glyphicon-menu-right icon-menu-right"></span>
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a href="">Nhà – Biệt thự</a>
+					</li>
+					<li>
+						<a href="">Căn hộ</a>
+					</li>
+					<li>
+						<a href="">Văn phòng</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<!-- Categories menu -->
+	</nav>
+
+	<!-- ---------------------------------Content Categories----------------------------------------------- -->
+	<div class="box-content">
+		<div class="container">
+			<div class="posts-by-category">
+				<div class="col-xs-12 col-sm-12 col-md-9 big-box big-box-posts-new b-bds">
+					<div class="col-xs-12 col-sm-12 col-md-12 tilte-cate-post-new">
+						<h3 class="title-cate">
+							<span class="cl-bds b-bds">Dự án</span>
+						</h3>
+						<div class="button-filter">
+							<button class="btn btn-danger btn-filter" onclick="openFormFilter()">
+								<i class="fa fa-filter"></i>
+								Bộ lọc
+							</button>
+						</div> <!--End button filter-->
+					</div><!--End Title-->
+					<div class="col-xs-12 col-sm-12 col-md-12 box-posts">
+						<div class="col-xs-12 col-sm-12 col-md-12 form-filter" id="form-filter">
+							<p class="title-filter">Bộ lọc</p>
+							<form action="">
+								<div class="form-group-filter">
+									<label for="" class="control-label">Tỉnh/Thành Phố: </label>
+									<select class="form-control">
+										<option>Chọn Tỉnh/Tp</option>
+										<option>Tp. Hồ Chí Minh</option>
+										<option>Hà Nội</option>
+										<option>Đà Nẵng</option>
+										<option>Nha Trang</option>
+										<option>Đà Lạt</option>
+									</select>
+								</div>
+								<div class="form-group-filter">
+									<label for="" class="control-label">Quận/Huyện: </label>
+									<select class="form-control">
+										<option>Quận/Huyện</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+										<option>Quận 1</option>
+									</select>
+								</div>
+								<div class="form-group-filter">
+									<label for="" class="control-label">Giá: </label>
+									<select class="form-control">
+										<option>Thấp nhất</option>
+										<option>10 triệu</option>
+										<option>20 triệu</option>
+									</select>
+									<span> - </span>
+									<select class="form-control">
+										<option>Cao nhất</option>
+										<option>100 triệu</option>
+										<option>200 triệu</option>
+									</select>
+								</div>
+								<div class="form-group-filter">
+									<label for="" class="control-label">Diện tích: </label>
+									<select class="form-control">
+										<option>Thấp nhất</option>
+										<option>50m2</option>
+										<option>80m2</option>
+									</select>
+									<span> - </span>
+									<select class="form-control">
+										<option>Cao nhất</option>
+										<option>100m2</option>
+										<option>200m2</option>
+									</select>
+								</div>
+							</form>
+						</div><!--End form filter-->
+						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
+									<source src="../../../media/img/video.mp4">
+									</video>		
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+											<p class="description">
+												Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+												- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+												- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+												- Hướng Đông Nam 
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button>
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
+									<source src="../../../media/img/video.mp4">
+									</video>		
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+											<p class="description">
+												Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+												- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+												- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+												- Hướng Đông Nam 
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button>
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
+									<source src="../../../media/img/video.mp4">
+									</video>		
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+											<p class="description">
+												Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+												- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+												- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+												- Hướng Đông Nam 
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button>
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
+									<source src="../../../media/img/video.mp4">
+									</video>		
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+											<p class="description">
+												Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+												- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+												- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+												- Hướng Đông Nam 
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button>
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
+									<source src="../../../media/img/video.mp4">
+									</video>		
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+											<p class="description">
+												Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+												- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+												- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+												- Hướng Đông Nam 
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button>
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
+									<source src="../../../media/img/video.mp4">
+									</video>		
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+											<p class="description">
+												Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+												- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+												- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+												- Hướng Đông Nam 
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button>
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<article class="col-xs-12 col-sm-12 col-md-12 box-post box-post-small-cate">
+							<div class="col-xs-12 col-sm-4 col-md-4 entry-thumbnail">
+								<video width="100%">
+									<source src="../../../media/img/video.mp4">
+									</video>		
+								</div>
+								<div class="entry-text">
+									<div class="entry-icon-auth">
+										<img src="../../../media/img/user-icon.png" alt="">
+									</div>
+									<div class="entry-text-info">
+										<div class="entry-header">
+											<h2>
+												<a href="">
+													Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+												</a>
+											</h2>
+										</div>
+										<div class="entry-content">
+											<p>
+												<span>10 triệu/tháng</span>
+												<span>|</span>
+												<span>Đà Nẵng</span>
+											</p>
+											<p>
+												<span>Tác giả</span>
+												<span>|</span>
+												<span>200 lượt xem</span>
+												<span>|</span>
+												<span>2 ngày trước</span>
+											</p>
+											<p class="description">
+												Bán nhà HXH // Phạm Văn Chiêu P9 Q.GV 
+												- Nhà Hẻm xe hơi 5m diện tích 4m*13m xây 3 tấm lệch tầng hiện đại và rất sáng 
+												- Nhà gồm : 1 phòng khách , 1 phòng bếp , 4 phòng ngũ , 3 tolet , sân thượng trước sau
+												- Hướng Đông Nam 
+											</p>
+										</div>
+									</div>
+									<div class="entry-icon-more">
+										<button>
+											<svg version="1.1" 
+											id="Capa_1" 
+											xmlns="http://www.w3.org/2000/svg" 
+											xmlns:xlink="http://www.w3.org/1999/xlink" 
+											x="0px" 
+											y="0px" 
+											viewBox="0 0 408 408" 
+											style="enable-background:new 0 0 408 408;" 
+											xml:space="preserve">
+											<g>
+												<g id="more-vert">
+													<path d="M204,102c28.05,0,51-22.95,51-51S232.05,0,204,0s-51,22.95-51,51S175.95,102,204,102z M204,153c-28.05,0-51,22.95-51,51
+													s22.95,51,51,51s51-22.95,51-51S232.05,153,204,153z M204,306c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51
+													S232.05,306,204,306z"/>
+												</g>
+											</g>
+										</svg>
+									</button>
+									<div class="box-more">
+										<button>Thêm vào Xem sau</button>
+										<button>Hủy</button>
+									</div>
+								</div>
+							</div>
+						</article> <!-- End POST -->
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<nav aria-label="Page navigation" class="pagination-bottom">
+								<ul class="pagination">
+									<li class="disabled">
+										<a href="#" aria-label="Previous" class="cl-bds">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li><a href="#" class="cl-bds active-bds">1</a></li>
+									<li><a href="#" class="cl-bds">2</a></li>
+									<li><a href="#" class="cl-bds">3</a></li>
+									<li><a href="#" class="cl-bds">4</a></li>
+									<li><a href="#" class="cl-bds">5</a></li>
+									<li>
+										<a href="#" aria-label="Next" class="cl-bds">
+											<span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div><!--End pagination BOTTOM-->
+					</div> <!--End Box-posts-->
+				</div> <!--End Content category-->
+				<div class="col-xs-12 col-sm-12 col-md-3 big-box-sidebar">
+					<div class="col-xs-12 col-sm-12 col-md-12 big-box sidebar b-bds">
+						<div class="col-xs-12 col-sm-12 col-md-12 tilte-cate-post-new">
+							<h3 class="title-cate">
+								<span class="cl-bds b-bds">Xem nhiều nhất</span>
+							</h3>
+						</div><!--End Title-->
+						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
+							<div class="img-related-post">
+								<a href="">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
+								</a>
+							</div>
+							<div class="title-related-post">
+								<a href="">
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+								</a>
+							</div>
+						</div><!--End related-post-->
+						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
+							<div class="img-related-post">
+								<a href="">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
+								</a>
+							</div>
+							<div class="title-related-post">
+								<a href="">
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+								</a>
+							</div>
+						</div><!--End related-post-->
+						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
+							<div class="img-related-post">
+								<a href="">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
+								</a>
+							</div>
+							<div class="title-related-post">
+								<a href="">
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+								</a>
+							</div>
+						</div><!--End related-post-->
+						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
+							<div class="img-related-post">
+								<a href="">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
+								</a>
+							</div>
+							<div class="title-related-post">
+								<a href="">
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+								</a>
+							</div>
+						</div><!--End related-post-->
+						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
+							<div class="img-related-post">
+								<a href="">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
+								</a>
+							</div>
+							<div class="title-related-post">
+								<a href="">
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+								</a>
+							</div>
+						</div><!--End related-post-->
+						<div class="col-xs-12 col-sm-6 col-md-12 related-post">
+							<div class="img-related-post">
+								<a href="">
+									<img src="http://clipchothue.vn/wp-content/uploads/thumb/batdongsan-cate-h300-36yje94lh7w0u4e3cswutc.png" alt="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế" title="Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế">
+								</a>
+							</div>
+							<div class="title-related-post">
+								<a href="">
+									Cần bán nhà Đà Nẵng 3 tầng đường Châu Thị Vĩnh Tế
+								</a>
+							</div>
+						</div><!--End related-post-->
+					</div> <!--End sidebar posts new-->
+					<div class="col-xs-12 col-sm-12 col-md-12 big-box sidebar b-bds">
+						<div class="col-xs-12 col-sm-12 col-md-12 tilte-cate-post-new">
+							<h3 class="title-cate">
+								<span class="cl-bds b-bds">Danh mục liên quan</span>
+							</h3>
+						</div><!--End Title-->
+						<div class="col-xs-12 col-sm-12 col-md-12 categories-name">
+							<ul>
+								<li>
+									<a href="">Đất nền</a>
+								</li>
+								<li>
+									<a href="">Nhà bán</a>
+								</li>
+								<li>
+									<a href="">Căn hộ</a>
+								</li>
+								<li>
+									<a href="">Đất rừng - Trang trại</a>
+								</li>
+								<li>
+									<a href="">Nghỉ dưỡng</a>
+								</li>
+								<li>
+									<a href="">Khách sạn</a>
+								</li>
+								<li>
+									<a href="">Kho - Nhà xưởng</a>
+								</li>
+								<li>
+									<a href="">Dự án</a>
+								</li>
+							</ul>
+						</div><!--End sidebar tagname-->
+					</div><!--End sidebar menu right-->
+					<div class="col-xs-12 col-sm-12 col-md-12 big-box sidebar b-bds">
+						<div class="col-xs-12 col-sm-12 col-md-12 tilte-cate-post-new">
+							<h3 class="title-cate">
+								<span class="cl-bds b-bds">Từ khóa liên quan</span>
+							</h3>
+						</div><!--End Title-->
+						<div class="col-xs-12 col-sm-12 col-md-12 tagsname">
+							<a href="" class="cl-bds b-bds">Nhà giá rẻ</a>
+							<a href="" class="cl-bds b-bds">Nhà mặt phố</a>
+							<a href="" class="cl-bds b-bds">Nhà trung tâm</a>
+							<a href="" class="cl-bds b-bds">Nhà đẹp giá rẻ</a>
+							<a href="" class="cl-bds b-bds">Nhà 3 tầng</a>
+						</div><!--End sidebar tagname-->
+					</div> <!--End sidebar tagname-->
+				</div><!--End Big box Sidebar-->
+			</div>
+		</div>
+	</div><!--End Content-->
+	<!-- ---------------------------------Footer----------------------------------------------- -->
+	<footer id="footer">
+		<div class="col-xs-12 col-sm-12 col-md-12 top-footer">
+			<div class="container">
+				<div class="col-xs-6 col-sm-3 col-md-3 footer-cate">
+					<ul>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<a href="" class="big-cate-footer">Bất động sản</a>
+							<div class="line-title"></div>
+						</div>
+
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/can-ho">
+								Căn hộ
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/dat-nen">
+								Đất - Mặt bằng
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/nha">
+								Nhà - Biệt thự
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/van-phong">
+								Văn phòng
+							</a>
+						</li>       
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 footer-cate">
+					<ul>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<a href="" class="big-cate-footer">Bất động sản</a>
+							<div class="line-title"></div>
+						</div>
+
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/can-ho">
+								Căn hộ
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/dat-nen">
+								Đất - Mặt bằng
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/nha">
+								Nhà - Biệt thự
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/van-phong">
+								Văn phòng
+							</a>
+						</li>       
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 footer-cate">
+					<ul>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<a href="" class="big-cate-footer">Bất động sản</a>
+							<div class="line-title"></div>
+						</div>
+
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/can-ho">
+								Căn hộ
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/dat-nen">
+								Đất - Mặt bằng
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/nha">
+								Nhà - Biệt thự
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/van-phong">
+								Văn phòng
+							</a>
+						</li>       
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 footer-cate">
+					<ul>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<a href="" class="big-cate-footer">Bất động sản</a>
+							<div class="line-title"></div>
+						</div>
+
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/can-ho">
+								Căn hộ
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/dat-nen">
+								Đất - Mặt bằng
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/nha">
+								Nhà - Biệt thự
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/van-phong">
+								Văn phòng
+							</a>
+						</li>       
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 footer-cate">
+					<ul>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<a href="" class="big-cate-footer">Bất động sản</a>
+							<div class="line-title"></div>
+						</div>
+
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/can-ho">
+								Căn hộ
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/dat-nen">
+								Đất - Mặt bằng
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/nha">
+								Nhà - Biệt thự
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/van-phong">
+								Văn phòng
+							</a>
+						</li>       
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 footer-cate">
+					<ul>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<a href="" class="big-cate-footer">Bất động sản</a>
+							<div class="line-title"></div>
+						</div>
+
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/can-ho">
+								Căn hộ
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/dat-nen">
+								Đất - Mặt bằng
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/nha">
+								Nhà - Biệt thự
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/van-phong">
+								Văn phòng
+							</a>
+						</li>       
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 footer-cate">
+					<ul>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<a href="" class="big-cate-footer">Bất động sản</a>
+							<div class="line-title"></div>
+						</div>
+
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/can-ho">
+								Căn hộ
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/dat-nen">
+								Đất - Mặt bằng
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/nha">
+								Nhà - Biệt thự
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/van-phong">
+								Văn phòng
+							</a>
+						</li>       
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 footer-cate">
+					<ul>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<a href="" class="big-cate-footer">Bất động sản</a>
+							<div class="line-title"></div>
+						</div>
+
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/can-ho">
+								Căn hộ
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/dat-nen">
+								Đất - Mặt bằng
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/nha">
+								Nhà - Biệt thự
+							</a>
+						</li>
+						<li>
+							<a href="http://clipchothue.vn/phan-loai/van-phong">
+								Văn phòng
+							</a>
+						</li>       
+					</ul>
+				</div>
+			</div>
+		</div> <!-- End footer top-->
+		<div class="col-xs-12 col-sm-12 col-md-12 bottom-footer">
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-7">
+					<p>
+						<strong class="name-company">Công ty cổ phần truyền thông VRM.</strong><span> HOTLINE: 0914 10 60</span>
+					</p>
+					<p>
+						<strong>Trụ sở chính: </strong><span>Số 96 Lê Văn Hưu, Quận Ngũ Hành Sơn, Tp. Đà Nẵng</span>
+					</p>
+					<p>
+						clipchothue.vn có trách nhiệm chuyển tải thông tin. Không chịu bất kỳ trách nhiệm nào từ các tin này.
+					</p>
+				</div>
+				<div class="col-xs-5 col-sm-3 col-md-2 mxh">
+					<p style="margin-bottom: 5px">
+						<strong class="name-company">Mạng xã hội</strong>
+					</p>
+					<a href="" class="btn btn-social-icon btn-facebook">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="" class="btn btn-social-icon btn-google">
+						<i class="fa fa-google"></i>
+					</a>
+					<a href="" class="btn btn-social-icon btn-google">
+						<i class="fa fa-youtube"></i>
+					</a>
+				</div>
+				<div class="col-xs-7 col-sm-6 col-md-3 img-bct">
+					<img src="../../../media/img/dathongbao-h60.png" alt="Đăng ký bộ công thương">
+				</div>
+			</div>
+		</div>
+	</footer><!--footer-->
+	<script type='text/javascript' src='../../../media/js/jquery-3.3.1.min.js'></script>
+	<script type='text/javascript' src='../../../media/js/bootstrap.min.js'></script>
+	<!-- Toggle Menu -->
+	<script type="text/javascript">
+		var menuToggle = document.getElementById('menu-toggle');
+		var btnMenu = document.getElementById('btn-menu');
+		btnMenu.addEventListener('click', onMenuToggle);
+		function onMenuToggle(){
+			if (menuToggle.style.display == 'block') {
+				menuToggle.style.display = "none";
+				document.getElementById('icon-menu').className = "glyphicon glyphicon-menu-hamburger";
+			}else{
+				menuToggle.style.display = "block";
+				document.getElementById('icon-menu').className = "glyphicon glyphicon-remove";
+			} ;
+		}
+	</script>
+	<!-- toggle Search -->
+	<script>
+		var btnSearch = document.getElementById('btn-search');
+		var boxFormSearch = document.getElementById('box-form-search');
+		btnSearch.addEventListener('click', onSearch);
+		function onSearch(){
+			if (boxFormSearch.style.display == 'block') {
+				btnSearch.children[1].style.display = 'none';
+				boxFormSearch.style.display = 'none';
+			}else{
+				btnSearch.children[1].style.display = 'block';
+				boxFormSearch.style.display = 'block'
+			}
+
+		}
+	</script>
+	<!-- Back To Top -->
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+				document.getElementById("myBtn").style.display = "block";
+				document.getElementById("header").style.position = "fixed";
+				document.getElementById("header").style.top = 0;
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+				document.getElementById("header").style.position = "relative";
+			}
+		}
+		document.getElementById('myBtn').addEventListener("click", function(){
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		});
+	</script>
+	<script>
+		var btnFilter = document.getElementById('form-filter');
+		function openFormFilter(){		
+			if (btnFilter.style.display == 'block') {
+				btnFilter.style.display = 'none';
+			}else{
+				btnFilter.style.display = 'block';
+			}
+		};
+	</script>
+	<!-- Video -->
+	<script>
+		var hoverVideos = document.querySelectorAll("video");
+		for (let hoverVideo of hoverVideos){
+			hoverVideo.addEventListener('mouseover', showControlVideo);
+			function showControlVideo(){
+				var control = document.createAttribute("controls");
+				hoverVideo.attributes.setNamedItem(control);
+				var autoPlay = document.createAttribute("autoplay");
+				hoverVideo.attributes.setNamedItem(autoPlay);
+			}
+			hoverVideo.addEventListener('mouseout', hiddenControlVideo);
+			function hiddenControlVideo(){
+				hoverVideo.removeAttribute("controls");
+				hoverVideo.removeAttribute("autoplay");
+			}
+		}
+	</script>
+	<!-- Button more -->
+	<script type="text/javascript">
+		var btnMores = document.querySelectorAll(".entry-icon-more");
+		for (let btnMore of btnMores){
+			btnMore.addEventListener('click', showBoxMore);
+			function showBoxMore(event){
+				if (event.target.tagName == 'path' || event.target.tagName == 'svg' ||event.target.tagName == 'BUTTON'){
+					if (btnMore.children[1].style.display == "block") {
+						btnMore.children[1].style.display = "none";
+					}else{
+						btnMore.children[1].style.display = "block";
+					}	
+				}
+			}
+		}
+	</script>
+</body>
+</html>
