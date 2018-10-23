@@ -334,6 +334,10 @@
 	.form-post-p1{
 		display: block !important;
 	}
+	/*DDAng tin*/
+	.form-post-new{
+		padding-right: 20px;
+	}
 }
 /*----------------------------DESTOP - LAPTOP-------------------------------------------*/
 @media (min-width: 991px){
